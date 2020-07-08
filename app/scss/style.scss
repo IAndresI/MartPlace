@@ -166,6 +166,7 @@
       border: none;
       right: 0;
       top: 0;
+      cursor: pointer;
 
       &:focus {
         outline: transparent;
@@ -190,7 +191,6 @@
 
   &__h2 {
     font-size: 60px;
-
   }
 
   &__h1 {
@@ -265,6 +265,7 @@
     border-radius: 0 5px 5px 0;
     padding-left: 20px;
     appearance: none;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -293,6 +294,7 @@
     border-radius: 5px;
     color: #ffffff;
     border: none;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -380,6 +382,10 @@
     width: 50%;
     height: 100%;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__arrow {
@@ -391,20 +397,26 @@
 .slider {
   &__inner {
     min-height: 450px;
+    overflow: hidden;
+  }
+
+  &__translatex {
+    display: flex;
+    align-items: flex-start;
+    transition: all .4s;
   }
 
   &__item {
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 1170px;
     display: flex;
+    min-height: 455px;
   }
 
   &__image {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
-    min-height: 100%;
   }
 
   &__description {
@@ -459,19 +471,21 @@
 
   &__tags {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
   }
 
   &__tag {
     margin-right: 7px;
-    background-color: #f1f3f6;
-    padding: 8px 17px;
-    border-radius: 40px;
+    margin-bottom: 7px;
   }
 
   &__link {
     text-decoration: none;
     color: $header-text_color;
+    background-color: #f1f3f6;
+    padding: 8px 17px;
+    border-radius: 40px;
   }
 
   &__footer {
@@ -526,5 +540,12 @@
     }
   }
 
-  &__rating {}
+  &__raiting {
+    display: flex;
+  }
+
+  &__raiting-link {
+    text-decoration: none;
+    color: #000000;
+  }
 }

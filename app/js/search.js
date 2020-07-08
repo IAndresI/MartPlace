@@ -28,4 +28,4 @@ function search(button, box) {
   });
 }
 
-module.exports = search;
+export default search;
