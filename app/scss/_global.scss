@@ -37,13 +37,29 @@ a {
 
 .category {
   text-decoration: none;
-  color: $header-text_color;
+  color: $text_color;
   background-color: #f1f3f6;
-  padding: 8px 17px;
+  padding: 5px 17px;
   border-radius: 40px;
+  transition: all .2s;
 
   &--active {
     background-color: $blue;
     color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &:active {
+    border: 1px solid $blue;
+    background-color: #ffffff;
+    color: $blue;
   }
 }

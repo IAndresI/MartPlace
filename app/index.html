@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,38 +14,38 @@
   <header class="header">
     <div class="header__top-menu ">
       <div class="container top-menu">
-        <a href="#" class="top-menu__link">
+        <a href="#" class="header__link">
           <img src="./images/header/logo.png" alt="logo" class="top-menu__logo">
         </a>
         <div class="top-menu__content">
           <a class="top-menu__button">Become a Seller</a>
           <ul class="top-menu__icons-list">
             <li class="top-menu__icons-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="header__link">
                 <img src="./images/header/alarm.png" alt="alarm" class="top-menu__icon">
                 <div class="top-menu__counter-alarm counter">11</div>
               </a>
             </li>
             <li class="top-menu__icons-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="header__link">
                 <img src="./images/header/envelope.png" alt="messege" class="top-menu__icon">
                 <div class="top-menu__counter-messege counter">1</div>
               </a>
             </li>
             <li class="top-menu__icons-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="header__link">
                 <img src="./images/header/cart.png" alt="cart" class="top-menu__icon">
                 <div class="top-menu__counter-cart counter">32</div>
               </a>
             </li>
           </ul>
-          <a href="#" class="top-menu__link">
+          <a href="#" class="header__link">
             <div class="top-menu__user-image" style="background-image: url();"></div>
           </a>
           <div class="top-menu__user-info">
-            <a href="#" class="top-menu__link">
+            <a href="#" class="header__link">
               <div class="top-menu__user-name">
-                <a href="#" class="top-menu__link">
+                <a href="#" class="header__link">
                   Andre Spez
                 </a>
               </div>
@@ -64,26 +64,26 @@
         <nav class="bottom-menu__nav">
           <ul class="bottom-menu__nav-list">
             <li class="bottom-menu__nav-item">
-              <a href="#" class="top-menu__link top-menu__link--active">
+              <a href="#" class="bottom-menu__nav-link header__link">
                 home
               </a></li>
             <li class="bottom-menu__nav-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="bottom-menu__nav-link header__link">
                 all poducts
               </a>
             </li>
             <li class="bottom-menu__nav-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="bottom-menu__nav-link header__link">
                 wordpress
               </a>
             </li>
             <li class="bottom-menu__nav-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="bottom-menu__nav-link header__link">
                 festures
               </a>
             </li>
             <li class="bottom-menu__nav-item">
-              <a href="#" class="top-menu__link">
+              <a href="#" class="bottom-menu__nav-link header__link">
                 pages
               </a>
             </li>
@@ -188,7 +188,7 @@
                   </div>
                 </div>
                 <div class="slider__description">
-                  <div class="slider__title item__description-title">One Page Resume Template</div>
+                  <div class="slider__title">One Page Resume Template</div>
                   <div class="item__description-person">
                     <a class="link" href="#">
                       <div class="item__description-avatar"></div>
@@ -399,7 +399,16 @@
     <div class="container">
       <div class="products__header">
         <div class="products__header-title">Newest Release Products</div>
-        <button class="products__header-filter">Filter by:</button>
+        <button class="products__header-filter release-filter">
+          <span class="release-filter__title">Filter by:</span>
+          <ul class="release-filter__list">
+            <li class="release-filter__item">Tranding items</li>
+            <li class="release-filter__item">Best seller</li>
+            <li class="release-filter__item">Best raiting</li>
+            <li class="release-filter__item">Lower price</li>
+            <li class="release-filter__item">High price</li>
+          </ul>
+        </button>
       </div>
       <ul class="products__categories-list">
         <li class="products__categories-item"><button class="products__category-button category">Website</button>
@@ -462,7 +471,7 @@
               <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
               <a class="link" href="#">
                 <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                  <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
                   PSD
                 </div>
               </a>
@@ -475,6 +484,7 @@
             <div class="item__statistic">
               <div class="item__statistic-price">$110</div>
               <div class="item__statistic-likes">46</div>
+              <div class="rate-star" data-rate="5"></div>
             </div>
             <div class="item__statistic-buys">634</div>
           </div>
@@ -492,7 +502,7 @@
               <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
               <a class="link" href="#">
                 <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                  <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
                   HTML
                 </div>
               </a>
@@ -534,6 +544,7 @@
             <div class="item__statistic">
               <div class="item__statistic-price">$110</div>
               <div class="item__statistic-likes">46</div>
+              <div class="rate-star" data-rate="4.3"></div>
             </div>
             <div class="item__statistic-buys">634</div>
           </div>
@@ -550,7 +561,7 @@
               <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
               <a class="link" href="#">
                 <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                  <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
                   PSD
                 </div>
               </a>
@@ -563,6 +574,7 @@
             <div class="item__statistic">
               <div class="item__statistic-price">$110</div>
               <div class="item__statistic-likes">46</div>
+              <div class="rate-star" data-rate="2.7"></div>
             </div>
             <div class="item__statistic-buys">634</div>
           </div>
@@ -578,7 +590,7 @@
               <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
               <a class="link" href="#">
                 <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                  <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
                   HTML
                 </div>
               </a>

@@ -7,7 +7,7 @@ function tabs() {
       for (let i = 0; i < tabs.length; i++) {
         tabs[i].firstChild.classList.remove("category--active");
       }
-      e.target.classList.add("category--active");
+      if (e.target.classList.contains("products__category-button")) e.target.classList.add("category--active");
       let therescontent = false;
       let nothingsFind = document.querySelector(".nothing-find");
       for (let i = 0; i < tab_content.length; i++) {

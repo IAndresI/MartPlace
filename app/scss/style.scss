@@ -21,6 +21,17 @@
     background-color: #eef1f3;
   }
 
+  &__link {
+    text-decoration: none;
+    color: $darc-grey_color;
+    position: relative;
+    transition: all .4s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
   & .top-menu {
     display: flex;
     min-height: 100px;
@@ -38,32 +49,10 @@
       height: 100%;
     }
 
-    &__link {
-      text-decoration: none;
-      color: $header-text_color;
-      position: relative;
-      transition: all .4s;
-
-      &--active {
-        border-bottom: 3px solid $blue;
-        color: $blue;
-      }
-
-      &:active {
-        transition: all .05s;
-        border-bottom: 3px solid $blue;
-      }
-
-      &:hover {
-        color: $blue;
-      }
-    }
-
     &__button {
       display: flex;
       font-size: 14px;
       align-items: center;
-      justify-content: center;
       padding: 0 20px;
       height: 35px;
       margin-top: 5px;
@@ -167,6 +156,10 @@
         color: $blue;
         text-decoration: underline;
       }
+
+      &:focus {
+        border-bottom: 2px solid $blue;
+      }
     }
   }
 
@@ -191,6 +184,20 @@
       }
     }
 
+    &__nav-link {
+      text-decoration: none;
+
+      &:active {
+        transition: all .05s;
+        border-bottom: 3px solid $blue;
+      }
+
+      &:focus {
+        border-bottom: 3px solid $blue;
+        color: $blue;
+      }
+    }
+
     &__form {
       position: relative;
     }
@@ -212,7 +219,7 @@
     &__submit {
       position: absolute;
       width: 70px;
-      height: 45px;
+      height: 44px;
       border-radius: 40px;
       background-color: $blue;
       border: none;
@@ -292,6 +299,7 @@
     }
 
     &:focus {
+      border: 3px solid $blue;
       outline: none;
     }
   }
@@ -320,7 +328,6 @@
     height: 55px;
     width: 610px;
     border: 1px solid #b9b9b9;
-    border-right: none;
     border-radius: 5px 0 0 5px;
     padding-left: 30px;
 
@@ -371,10 +378,6 @@
     transition: all .4s;
     cursor: pointer;
 
-    &:focus {
-      outline: none;
-    }
-
     &:active {
       box-shadow: inset 0 0 10px 2px #b9b9b9;
     }
@@ -384,11 +387,18 @@
       background-color: #ffffff;
       border: 1px solid $blue;
     }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $blue;
+      background-color: transparent;
+      color: $blue;
+    }
   }
 }
 
 .works {
-  margin-bottom: 95px;
+  margin-bottom: 115px;
 
   &__inner {
     display: flex;
@@ -410,18 +420,18 @@
   }
 
   &__image {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   &__title {
     font-weight: 500;
     font-size: 24px;
-    margin-bottom: 35px;
-    color: $header-text_color;
+    margin-bottom: 20px;
+    color: #000000;
   }
 
   &__text {
-    color: $text_color;
+    color: #000000;
     text-align: center;
     line-height: 30px;
   }
@@ -473,10 +483,15 @@
       outline: none
     }
 
-    &:focus .products-slider__arrow {
-      outline: none;
+    &:hover .products-slider__arrow {
       width: 15px;
       height: 20px;
+    }
+
+    &:active .products-slider__arrow {
+      transition: all .1s;
+      width: 8px;
+      height: 12px;
     }
   }
 
@@ -535,6 +550,10 @@
       background-color: #ffffff;
       color: $blue;
     }
+
+    &:active {
+      box-shadow: inset 0 0 10px 2px #b9b9b9;
+    }
   }
 
   &__image-container {
@@ -559,6 +578,8 @@
 
   &__title {
     font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
   }
 
   &__seller-description {
@@ -674,6 +695,7 @@
     &::after {
       content: "";
       position: absolute;
+      top: 0;
       right: 0;
       background-image: url(../images/products-filter.svg);
       height: 20px;
@@ -682,6 +704,11 @@
 
     &:focus {
       outline: none;
+    }
+
+    &:hover .release-filter__list {
+      max-height: 200px;
+      box-shadow: 0 0 10px 2px #b9b9b9;
     }
   }
 
@@ -700,10 +727,6 @@
   &__category-button {
     border: none;
     cursor: pointer;
-
-    &:focus {
-      outline: none;
-    }
   }
 
   &__container {
@@ -730,7 +753,7 @@
   }
 
   &__link-show {
-    padding: 20px 30px;
+    padding: 18px 30px;
     border-radius: 40px;
     color: #ffffff;
     background-color: $blue;
@@ -812,7 +835,7 @@
   }
 
   &__seller-description {
-    color: $header-text_color;
+    color: $darc-grey_color;
     line-height: 30px;
   }
 
@@ -842,9 +865,9 @@
 
   &__statistic-likes {
     position: relative;
-    margin-right: 45px;
+    margin-right: 20px;
     font-size: 15px;
-    color: $header-text_color;
+    color: $darc-grey_color;
 
     &:before {
       content: "";
@@ -884,6 +907,35 @@
   text-align: center;
   display: none;
   margin-top: 50px;
+}
+
+.release-filter {
+
+  &__list {
+    position: absolute;
+    width: 150px;
+    background-color: #ffffff;
+    transition: all .4s;
+    overflow: hidden;
+    max-height: 0;
+    top: 30px;
+  }
+
+  &__item {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: left;
+    transition: all .6s;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: $blue;
+    }
+  }
 }
 
 .followers-slider {
