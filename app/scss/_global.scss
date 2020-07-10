@@ -33,3 +33,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+.category {
+  text-decoration: none;
+  color: $header-text_color;
+  background-color: #f1f3f6;
+  padding: 8px 17px;
+  border-radius: 40px;
+
+  &--active {
+    background-color: $blue;
+    color: #ffffff;
+  }
+}

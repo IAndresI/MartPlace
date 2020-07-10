@@ -3,6 +3,9 @@ function slider(slider__item, slider__translateX, slider__button__next, slider__
     slider_transitionx = document.querySelector(slider__translateX),
     slider_button_next = document.querySelector(slider__button__next),
     slider_button_prev = document.querySelector(slider__button__prev),
+    slider_container = document.querySelectorAll(".slider__image-container"),
+    image = document.querySelectorAll(".slider__image-hover"),
+    more = document.querySelectorAll(".slider__image"),
     temp = 0,
     startX = 0,
     endX = 0;
@@ -50,6 +53,18 @@ function slider(slider__item, slider__translateX, slider__button__next, slider__
     endX = event.changedTouches[0].clientX;
     scrollSlideOnTouch();
   });
+
+  for (let i = 0; i < slider_container.length; i++) {
+    slider_container[i].addEventListener('mouseenter', function () {
+      image[i].style.width = "100%";
+      more[i].style.width = "0";
+    });
+
+    slider_container[i].addEventListener('mouseleave', function () {
+      image[i].style.width = "0";
+      more[i].style.width = "100%";
+    });
+  }
 }
 
 export default slider;
