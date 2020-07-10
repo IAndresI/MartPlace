@@ -785,14 +785,62 @@
 
   &--tab {
     transition: all .2s;
+    position: relative;
   }
 
-  &__image {
+  &__image-container {
     height: 230px;
-    background-position: center;
+    position: relative;
+  }
+
+  &__image-newest {
+    height: 100%;
     background-size: cover;
-    background-image: url(../images/slider/slide.jpg);
+    background-position: center;
     border-radius: 5px 5px 0 0;
+    width: 100%;
+    transition: all .4s;
+  }
+
+  &__hover {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background: linear-gradient(to right, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .4s;
+  }
+
+  &__more,
+  &__live {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 16px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all .4s;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: $blue;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 10px 2px #b9b9b9;
+    }
   }
 
   &__description {
