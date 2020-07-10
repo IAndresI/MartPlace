@@ -30,6 +30,10 @@
     &:hover {
       color: $blue;
     }
+
+    &:active {
+      color: #000000;
+    }
   }
 
   & .top-menu {
