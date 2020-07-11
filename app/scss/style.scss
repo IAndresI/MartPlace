@@ -53,7 +53,7 @@
       height: 100%;
     }
 
-    &__button {
+    &__link {
       display: flex;
       font-size: 14px;
       align-items: center;
@@ -277,9 +277,9 @@
     margin-bottom: 68px;
   }
 
-  &__button {
-    width: 190px;
-    height: 55px;
+  &__link {
+    padding: 20px 30px;
+    width: 200px 100px;
     border-radius: 40px;
     border: 1px solid #ffffff;
     color: #ffffff;
@@ -304,6 +304,7 @@
 
     &:focus {
       border: 3px solid $blue;
+      padding: 19px 28px;
       outline: none;
     }
   }
@@ -978,6 +979,7 @@
     padding: 10px 20px;
     text-align: left;
     transition: all .6s;
+    display: flex;
 
     &:hover {
       color: $blue;
@@ -986,6 +988,20 @@
     &:active {
       color: #ffffff;
       background-color: $blue;
+    }
+
+    &:focus {
+      color: $blue;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
     }
   }
 }
