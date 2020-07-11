@@ -26,7 +26,7 @@ function rate(container) {
             <stop offset="${last_star_rate*100}%" stop-color="gold"></stop>
             <stop offset="${last_star_rate*100}%" stop-color="black"></stop>
           </linearGradient>
-          <g fill="url(#gradient)">
+          <g fill="url(#gradient)" stroke-width="2">
             <polygon points="535.5,210.375 344.25,210.375 267.75,19.125 191.25,210.375 0,210.375 172.125,325.125 95.625,516.375 
               267.75,401.625 439.875,516.375 363.375,325.125 	" />
           </g>

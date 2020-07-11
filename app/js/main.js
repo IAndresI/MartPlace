@@ -23,4 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
       image[i].style.width = "100%";
     });
   }
+
 });
