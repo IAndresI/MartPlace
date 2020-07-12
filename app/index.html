@@ -22,25 +22,25 @@
           <ul class="top-menu__icons-list">
             <li class="top-menu__icons-item">
               <a href="#" class="header__link">
-                <img src="./images/header/alarm.png" alt="alarm" class="top-menu__icon">
-                <div class="top-menu__counter-alarm counter">11</div>
+                <div class="top-menu__icon lnr lnr-alarm"><span class="screen-reader">check alerts</span></div>
+                <div class="top-menu__counter-alarm counter">174</div>
               </a>
             </li>
             <li class="top-menu__icons-item">
               <a href="#" class="header__link">
-                <img src="./images/header/envelope.png" alt="messege" class="top-menu__icon">
+                <div class="top-menu__icon lnr lnr-envelope"><span class="screen-reader">check messeges</span></div>
                 <div class="top-menu__counter-messege counter">1</div>
               </a>
             </li>
             <li class="top-menu__icons-item">
               <a href="#" class="header__link">
-                <img src="./images/header/cart.png" alt="cart" class="top-menu__icon">
+                <div class="top-menu__icon lnr lnr-cart"><span class="screen-reader">check shopping cart</span></div>
                 <div class="top-menu__counter-cart counter">32</div>
               </a>
             </li>
           </ul>
           <a href="#" class="header__link">
-            <div class="top-menu__user-image" style="background-image: url();"></div>
+            <img class="top-menu__user-image" alt="avatar" src="./images/header/logo.png">
           </a>
           <div class="top-menu__user-info">
             <a href="#" class="header__link">
@@ -59,715 +59,623 @@
         </div>
       </div>
     </div>
-    <div class="header__bottom-menu">
-      <div class="container bottom-menu">
-        <nav class="bottom-menu__nav">
-          <ul class="bottom-menu__nav-list">
-            <li class="bottom-menu__nav-item">
-              <a href="#" class="bottom-menu__nav-link header__link">
+    <div class="header__menu">
+      <div class="container menu">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
                 home
-              </a></li>
-            <li class="bottom-menu__nav-item">
-              <a href="#" class="bottom-menu__nav-link header__link">
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
                 all poducts
               </a>
             </li>
-            <li class="bottom-menu__nav-item">
-              <a href="#" class="bottom-menu__nav-link header__link">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
                 wordpress
               </a>
             </li>
-            <li class="bottom-menu__nav-item">
-              <a href="#" class="bottom-menu__nav-link header__link">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
                 festures
               </a>
             </li>
-            <li class="bottom-menu__nav-item">
-              <a href="#" class="bottom-menu__nav-link header__link">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
                 pages
               </a>
             </li>
           </ul>
         </nav>
-        <form action="" class="bottom-menu__form">
-          <input type="search" class="bottom-menu__input" placeholder="Search products here...">
-          <button class="bottom-menu__submit" type="submit">
-            <img src="./images/header/magnifier.png" alt="magnifer" class="bottom-menu__img">
+        <form action="" class="menu__form">
+          <input type="search" class="menu__input" placeholder="Search products here...">
+          <button class="menu__submit" type="submit">
+            <div class="menu__img lnr lnr-magnifier">
           </button>
         </form>
       </div>
     </div>
     </div>
   </header>
-
-  <section class="preview">
+  <div class="test">
     <div class="container">
-      <div class="preview__inner">
-        <div class="preview__h2">Create Your Own</div>
-        <div class="preview__h1">Digital Product Marketplace</div>
-        <div class="preview__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads
-          Products</div>
-        <div class="preview__links">
-          <a class="preview__link link" href="#">View All Products</a>
-          <a class="preview__link link" href="#">Popular Products</a>
-        </div>
-        <form action="" class="preview__search">
-          <div class="preview__search-inner">
-            <input type="serach" class="preview__search-text" placeholder="Search your products">
-            <div class="preview__search-container">
-              <select type="text" class="preview__search-select">
-                <option>All categories</option>
-                <option>categories</option>
-                <option>categories</option>
-              </select>
-            </div>
-            <button class="preview__search-submit">Search Now</button>
-        </form>
+      <div class="test__inner">
+        <input type="range" class="test__leftinput" min="0" max="100" value="0">
+        <input type="range" class="test__rightinput" min="0" max="100" value="100">
       </div>
-
     </div>
-  </section>
+  </div>
+  <main class="main">
+    <section class="preview">
+      <div class="container">
+        <div class="preview__inner">
+          <div class="preview__h2">Create Your Own</div>
+          <div class="preview__h1">Digital Product Marketplace</div>
+          <div class="preview__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads
+            Products</div>
+          <div class="preview__links">
+            <a class="preview__link link" href="#">View All Products</a>
+            <a class="preview__link link" href="#">Popular Products</a>
+          </div>
+          <div class="preview__search-bg1"></div>
+          <div class="preview__search-bg2"></div>
+          <form action="" class="preview__search">
+            <div class="preview__search-inner">
+              <input type="serach" class="preview__search-text" placeholder="Search your products">
+              <div class="preview__search-container">
+                <select type="text" class="preview__search-select">
+                  <option>All categories</option>
+                  <option>categories</option>
+                  <option>categories</option>
+                </select>
+              </div>
+              <button class="preview__search-submit">Search Now</button>
+          </form>
+        </div>
 
-  <section class="works">
-    <div class="container">
-      <div class="works__inner">
-        <div class="works__item">
-          <div class="works__image">
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="container">
+        <div class="works__inner">
+          <div class="works__item">
             <img src="./images/works/book.png" alt="book" class="works__img">
+            <div class="works__title">Best UX Research</div>
+            <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
           </div>
-          <div class="works__title">Best UX Research</div>
-          <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.</div>
-        </div>
-        <div class="works__item">
-          <div class="works__image">
+          <div class="works__item">
             <img src="./images/works/table.png" alt="book" class="works__img">
+            <div class="works__title">Fully Responsive</div>
+            <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
           </div>
-          <div class="works__title">Fully Responsive</div>
-          <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.</div>
-        </div>
-        <div class="works__item">
-          <div class="works__image">
+          <div class="works__item">
             <img src="./images/works/mobiles.png" alt="book" class="works__img">
+            <div class="works__title">Buy & Sell Easily</div>
+            <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.</div>
           </div>
-          <div class="works__title">Buy & Sell Easily</div>
-          <div class="works__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="products-slider">
-    <div class="container">
-      <div class="products-slider__inner">
-        <div class="products-slider__header">
-          <span class="products-slider__title">Weekly Featured Products</span>
+    <section class="products-slider">
+      <div class="container">
+        <div class="products-slider__inner">
+          <div class="products-slider__header">
+            <span class="products-slider__title">Weekly Featured Products</span>
+            <div class="products-slider__arrows">
+              <button class="products-slider__arrows-prev">
+                <div class="products-slider__arrow-prev products-slider__arrow-hover lnr lnr-chevron-left"></div>
+              </button>
+              <button class=" products-slider__arrows-next">
+                <div class="products-slider__arrow-next products-slider__arrow-hover lnr lnr-chevron-right"></div>
+              </button>
+            </div>
+          </div>
+          <div class="products-slider__slider slider">
+            <div class="slider__inner">
+              <div class="slider__translatex">
+                <div class="slider__item item">
+                  <div class="slider__image-container">
+                    <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
+                    <div class="slider__image-hover">
+                      <a class="slider__image-more" href="#">More Info</a>
+                      <a class="slider__image-live" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="slider__description">
+                    <div class="slider__title">One Page Resume Template</div>
+                    <div class="item__description-person">
+                      <div class="item__description-name">
+                        <a class="link" href="#">
+                          <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                        </a>
+                        <a class="link" href="#">AazzTech</a>
+                      </div>
+                      <a href="#" class="link">
+                        <div class="item__description-type">
+                          <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
+                          WordPress
+                        </div>
+                      </a>
+                    </div>
+                    <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
+                      mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                    </div>
+                    <ul class="slider__tags">
+                      <li class="slider__tag"><a href="#" class="category">website</a></li>
+                      <li class="slider__tag"><a href="#" class="category">plugin</a></li>
+                      <li class="slider__tag"><a href="#" class="category">landing page</a></li>
+                    </ul>
+                    <div class="slider__footer">
+                      <div class="slider__statistic">
+                        <div class="slider__statistic-price">$10 - $50</div>
+                        <button class="slider__statistic-likes lnr lnr-heart">
+                          <span class="slider__statistic-likescounter">46</span>
+                        </button>
+                        <button class="slider__statistic-buys lnr lnr-cart">
+                          <span class="slider__statistic-buyscounter">634</span>
+                        </button>
+                      </div>
+                      <div class="rate-star" data-rate="4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item item">
+                  <div class="slider__image-container">
+                    <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
+                    <div class="slider__image-hover">
+                      <a class="slider__image-more" href="#">More Info</a>
+                      <a class="slider__image-live" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="slider__description">
+                    <div class="slider__title">One Page Resume Template</div>
+                    <div class="item__description-person">
+                      <div class="item__description-name">
+                        <a class="link" href="#">
+                          <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                        </a>
+                        <a class="link" href="#">AazzTech</a>
+                      </div>
+                      <a href="#" class="link">
+                        <div class="item__description-type">
+                          <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
+                          WordPress
+                        </div>
+                      </a>
+                    </div>
+                    <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
+                      mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                    </div>
+                    <ul class="slider__tags">
+                      <li class="slider__tag"><a href="#" class="category">website</a></li>
+                      <li class="slider__tag"><a href="#" class="category">plugin</a></li>
+                      <li class="slider__tag"><a href="#" class="category">landing page</a></li>
+                    </ul>
+                    <div class="slider__footer">
+                      <div class="slider__statistic">
+                        <div class="slider__statistic-price">$10 - $50</div>
+                        <div class="slider__statistic-likes lnr lnr-heart"><span
+                            class="slider__statistic-likescounter">46</span></div>
+                        <div class="slider__statistic-buys lnr lnr-cart"><span
+                            class="slider__statistic-buyscounter">634</span></div>
+                      </div>
+                      <div class="rate-star" data-rate="4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item item">
+                  <div class="slider__image-container">
+                    <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
+                    <div class="slider__image-hover">
+                      <a class="slider__image-more" href="#">More Info</a>
+                      <a class="slider__image-live" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="slider__description">
+                    <div class="slider__title">One Page Resume Template</div>
+                    <div class="item__description-person">
+                      <div class="item__description-name">
+                        <a class="link" href="#">
+                          <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                        </a>
+                        <a class="link" href="#">AazzTech</a>
+                      </div>
+                      <a href="#" class="link">
+                        <div class="item__description-type">
+                          <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
+                          WordPress
+                        </div>
+                      </a>
+                    </div>
+                    <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
+                      mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                    </div>
+                    <ul class="slider__tags">
+                      <li class="slider__tag"><a href="#" class="category">website</a></li>
+                      <li class="slider__tag"><a href="#" class="category">plugin</a></li>
+                      <li class="slider__tag"><a href="#" class="category">landing page</a></li>
+                    </ul>
+                    <div class="slider__footer">
+                      <div class="slider__statistic">
+                        <div class="slider__statistic-price">$10 - $50</div>
+                        <div class="slider__statistic-likes lnr lnr-heart"><span
+                            class="slider__statistic-likescounter">46</span></div>
+                        <div class="slider__statistic-buys lnr lnr-cart"><span
+                            class="slider__statistic-buyscounter">634</span></div>
+                      </div>
+                      <div class="rate-star" data-rate="4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item item">
+                  <div class="slider__image-container">
+                    <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
+                    <div class="slider__image-hover">
+                      <a class="slider__image-more" href="#">More Info</a>
+                      <a class="slider__image-live" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="slider__description">
+                    <div class="slider__title">One Page Resume Template</div>
+                    <div class="item__description-person">
+                      <div class="item__description-name">
+                        <a class="link" href="#">
+                          <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                        </a>
+                        <a class="link" href="#">AazzTech</a>
+                      </div>
+                      <a href="#" class="link">
+                        <div class="item__description-type">
+                          <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
+                          WordPress
+                        </div>
+                      </a>
+                    </div>
+                    <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
+                      mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                    </div>
+                    <ul class="slider__tags">
+                      <li class="slider__tag"><a href="#" class="category">website</a></li>
+                      <li class="slider__tag"><a href="#" class="category">plugin</a></li>
+                      <li class="slider__tag"><a href="#" class="category">landing page</a></li>
+                    </ul>
+                    <div class="slider__footer">
+                      <div class="slider__statistic">
+                        <div class="slider__statistic-price">$10 - $50</div>
+                        <div class="slider__statistic-likes lnr lnr-heart"><span
+                            class="slider__statistic-likescounter">46</span></div>
+                        <div class="slider__statistic-buys lnr lnr-cart"><span
+                            class="slider__statistic-buyscounter">634</span></div>
+                      </div>
+                      <div class="rate-star" data-rate="4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products__header">
+          <div class="products__header-title">Newest Release Products</div>
+          <div class="products__header-filter release-filter">
+            <span class="release-filter__title">Filter by:</span>
+            <ul class="release-filter__list">
+              <li class="release-filter__item"><button class="release-filter__button">Tranding items</button></li>
+              <li class="release-filter__item"><button class="release-filter__button">Best seller </button> </li>
+              <li class="release-filter__item"><button class="release-filter__button">Best raiting</button> </li>
+              <li class="release-filter__item"><button class="release-filter__button">Lower price </button> </li>
+              <li class="release-filter__item"><button class="release-filter__button">High price </button> </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="products__categories-list">
+          <li class="products__categories-item"><button class="products__category-button category">Website</button>
+          </li>
+          <li class="products__categories-item" data-category="plugin"><button
+              class="products__category-button category">Plugins</button></li>
+          <li class="products__categories-item" data-category="psd"><button
+              class="products__category-button category">PSD</button></li>
+          <li class="products__categories-item" data-category="html"><button
+              class="products__category-button category">HTML</button></li>
+          <li class="products__categories-item" data-category="joomla"><button
+              class="products__category-button category">Joomla</button></li>
+          <li class="products__categories-item" data-category="software"><button
+              class="products__category-button category">Software</button></li>
+          <li class="products__categories-item" data-category="landing"><button
+              class="products__category-button category">Landing Page</button>
+          </li>
+          <li class="products__categories-item"><button class="products__category-button category">Site
+              Template</button>
+          </li>
+        </ul>
+        <div class="products__container">
+          <div class="nothing-find">Nothing Found</div>
+          <div class="products__item item item--tab" data-category="plugin">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                    Plugin
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item item item--tab" data-category="psd">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
+                    PSD
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet/
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="products__item item item--tab" data-category="html">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
+                    HTML
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet/
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item item item--tab" data-category="plugin">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                    Plugin
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet/
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item item item--tab" data-category="psd">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
+                    PSD
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet/
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+          <div class="products__item item item--tab" data-category="html">
+            <div class="item__image-container">
+              <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+              <div class="item__hover">
+                <a class="item__more" href="#">More Info</a>
+                <a class="item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="item__description">
+              <div class="item__description-title">E-commerce Shopping Cart</div>
+              <div class="item__description-person">
+                <div class="item__description-name">
+                  <a class="link" href="#">
+                    <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  </a>
+                  <a class="link" href="#">AazzTech</a>
+                </div>
+                <a class="link" href="#">
+                  <div class="item__description-type">
+                    <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
+                    HTML
+                  </div>
+                </a>
+              </div>
+              <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet/
+              </div>
+            </div>
+            <div class="item__footer">
+              <div class="item__statistic">
+                <div class="item__statistic-price">$110</div>
+                <div class="item__statistic-likes lnr lnr-heart"><span class="slider__statistic-likescounter">46</span>
+                </div>
+              </div>
+              <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__link-container">
+          <a href="#" class="products__link-show">All New Products</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="followers-slider">
+      <div class="container">
+        <div class="followers-slider__header products-slider__header">
+          <span class="products-slider__title">Your Followers Feed</span>
           <div class="products-slider__arrows">
             <button class="products-slider__arrows-prev">
-              <img src="./images/slider/chevron-left.png" alt="left" class="products-slider__arrow">
+              <div class="products-slider__arrow-prev products-slider__arrow-hover lnr lnr-chevron-left"></div>
             </button>
             <button class=" products-slider__arrows-next">
-              <img src="./images/slider/chevron-right.png" alt="right" class="products-slider__arrow">
+              <div class="products-slider__arrow-next products-slider__arrow-hover lnr lnr-chevron-right"></div>
             </button>
           </div>
         </div>
+
         <div class="products-slider__slider slider">
           <div class="slider__inner">
             <div class="slider__translatex">
-              <div class="slider__item item">
-                <div class="slider__image-container">
-                  <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
-                  <div class="slider__image-hover">
-                    <a class="slider__image-more" href="#">More Info</a>
-                    <a class="slider__image-live" href="#">Live Demo</a>
-                  </div>
-                </div>
-                <div class="slider__description">
-                  <div class="slider__title">One Page Resume Template</div>
-                  <div class="item__description-person">
-                    <a class="link" href="#">
-                      <div class="item__description-avatar"></div>
-                    </a>
-                    <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                    <a href="#" class="link">
-                      <div class="item__description-type">
-                        <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
-                        WordPress
-                      </div>
-                    </a>
-                  </div>
-                  <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
-                    mollis. Praesent pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <ul class="slider__tags">
-                    <li class="slider__tag"><a href="#" class="category">website</a></li>
-                    <li class="slider__tag"><a href="#" class="category">plugin</a></li>
-                    <li class="slider__tag"><a href="#" class="category">landing page</a></li>
-                  </ul>
-                  <div class="slider__footer">
-                    <div class="slider__statistic">
-                      <div class="slider__statistic-price">$10 - $50</div>
-                      <div class="slider__statistic-likes">46</div>
-                      <div class="slider__statistic-buys">634</div>
-                    </div>
-                    <div class="rate-star" data-rate="4"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__item item">
-                <div class="slider__image-container">
-                  <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
-                  <div class="slider__image-hover">
-                    <a class="slider__image-more" href="#">More Info</a>
-                    <a class="slider__image-live" href="#">Live Demo</a>
-                  </div>
-                </div>
-                <div class="slider__description">
-                  <div class="slider__title">One Page Resume Template</div>
-                  <div class="item__description-person">
-                    <a class="link" href="#">
-                      <div class="item__description-avatar"></div>
-                    </a>
-                    <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                    <a href="#" class="link">
-                      <div class="item__description-type">
-                        <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
-                        WordPress
-                      </div>
-                    </a>
-                  </div>
-                  <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
-                    mollis. Praesent pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <ul class="slider__tags">
-                    <li class="slider__tag"><a href="#" class="category">website</a></li>
-                    <li class="slider__tag"><a href="#" class="category">plugin</a></li>
-                    <li class="slider__tag"><a href="#" class="category">landing page</a></li>
-                  </ul>
-                  <div class="slider__footer">
-                    <div class="slider__statistic">
-                      <div class="slider__statistic-price">$10 - $50</div>
-                      <div class="slider__statistic-likes">46</div>
-                      <div class="slider__statistic-buys">634</div>
-                    </div>
-                    <div class="rate-star" data-rate="4"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__item item">
-                <div class="slider__image-container">
-                  <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
-                  <div class="slider__image-hover">
-                    <a class="slider__image-more" href="#">More Info</a>
-                    <a class="slider__image-live" href="#">Live Demo</a>
-                  </div>
-                </div>
-                <div class="slider__description">
-                  <div class="slider__title">One Page Resume Template</div>
-                  <div class="item__description-person">
-                    <a class="link" href="#">
-                      <div class="item__description-avatar"></div>
-                    </a>
-                    <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                    <a href="#" class="link">
-                      <div class="item__description-type">
-                        <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
-                        WordPress
-                      </div>
-                    </a>
-                  </div>
-                  <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
-                    mollis. Praesent pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <ul class="slider__tags">
-                    <li class="slider__tag"><a href="#" class="category">website</a></li>
-                    <li class="slider__tag"><a href="#" class="category">plugin</a></li>
-                    <li class="slider__tag"><a href="#" class="category">landing page</a></li>
-                  </ul>
-                  <div class="slider__footer">
-                    <div class="slider__statistic">
-                      <div class="slider__statistic-price">$10 - $50</div>
-                      <div class="slider__statistic-likes">46</div>
-                      <div class="slider__statistic-buys">634</div>
-                    </div>
-                    <div class="rate-star" data-rate="4"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__item item">
-                <div class="slider__image-container">
-                  <img src="./images/slider/slide.jpg" alt="slider-image" class="slider__image">
-                  <div class="slider__image-hover">
-                    <a class="slider__image-more" href="#">More Info</a>
-                    <a class="slider__image-live" href="#">Live Demo</a>
-                  </div>
-                </div>
-                <div class="slider__description">
-                  <div class="slider__title">One Page Resume Template</div>
-                  <div class="item__description-person">
-                    <a class="link" href="#">
-                      <div class="item__description-avatar"></div>
-                    </a>
-                    <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                    <a href="#" class="link">
-                      <div class="item__description-type">
-                        <img src="./images/slider/wordpress.png" alt="type" class="slider__seller-imagetype">
-                        WordPress
-                      </div>
-                    </a>
-                  </div>
-                  <div class="item__seller-description slider__seller-description">Nunc placerat mi id nisi interdum
-                    mollis. Praesent pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <ul class="slider__tags">
-                    <li class="slider__tag"><a href="#" class="category">website</a></li>
-                    <li class="slider__tag"><a href="#" class="category">plugin</a></li>
-                    <li class="slider__tag"><a href="#" class="category">landing page</a></li>
-                  </ul>
-                  <div class="slider__footer">
-                    <div class="slider__statistic">
-                      <div class="slider__statistic-price">$10 - $50</div>
-                      <div class="slider__statistic-likes">46</div>
-                      <div class="slider__statistic-buys">634</div>
-                    </div>
-                    <div class="rate-star" data-rate="4"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="products">
-    <div class="container">
-      <div class="products__header">
-        <div class="products__header-title">Newest Release Products</div>
-        <button class="products__header-filter release-filter">
-          <span class="release-filter__title">Filter by:</span>
-          <ul class="release-filter__list">
-            <li class="release-filter__item"><button class="asd">Tranding items</button></li>
-            <li class="release-filter__item"> Best seller</li>
-            <li class="release-filter__item"> Best raiting</li>
-            <li class="release-filter__item"> Lower price</li>
-            <li class="release-filter__item"> High price</li>
-          </ul>
-        </button>
-      </div>
-      <ul class="products__categories-list">
-        <li class="products__categories-item"><button class="products__category-button category">Website</button>
-        </li>
-        <li class="products__categories-item" data-category="plugin"><button
-            class="products__category-button category">Plugins</button></li>
-        <li class="products__categories-item" data-category="psd"><button
-            class="products__category-button category">PSD</button></li>
-        <li class="products__categories-item" data-category="html"><button
-            class="products__category-button category">HTML</button></li>
-        <li class="products__categories-item" data-category="joomla"><button
-            class="products__category-button category">Joomla</button></li>
-        <li class="products__categories-item" data-category="software"><button
-            class="products__category-button category">Software</button></li>
-        <li class="products__categories-item" data-category="landing"><button
-            class="products__category-button category">Landing Page</button>
-        </li>
-        <li class="products__categories-item"><button class="products__category-button category">Site Template</button>
-        </li>
-      </ul>
-      <div class="products__container">
-        <div class="nothing-find">Nothing Found</div>
-        <div class="products__item item item--tab" data-category="plugin">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                  Plugin
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet.
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-
-        <div class="products__item item item--tab" data-category="psd">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
-                  PSD
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet/
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-              <div class="rate-star" data-rate="5"></div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-
-
-        <div class="products__item item item--tab" data-category="html">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
-                  HTML
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet/
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-
-        <div class="products__item item item--tab" data-category="plugin">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                  Plugin
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet/
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-              <div class="rate-star" data-rate="4.3"></div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-
-        <div class="products__item item item--tab" data-category="psd">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/tab/svgfile.png" alt="type" class="item__description-imagetype">
-                  PSD
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet/
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-              <div class="rate-star" data-rate="2.7"></div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-        <div class="products__item item item--tab" data-category="html">
-          <div class="item__image-container">
-            <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-            <div class="item__hover">
-              <a class="item__more" href="#">More Info</a>
-              <a class="item__live" href="#">Live Demo</a>
-            </div>
-          </div>
-          <div class="item__description">
-            <div class="item__description-title">E-commerce Shopping Cart</div>
-            <div class="item__description-person">
-              <a class="link" href="#">
-                <div class="item__description-avatar"></div>
-              </a>
-              <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-              <a class="link" href="#">
-                <div class="item__description-type">
-                  <img src="./images/tab/htmlfile.png" alt="type" class="item__description-imagetype">
-                  HTML
-                </div>
-              </a>
-            </div>
-            <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-              justo ut scelerisque the mattis, leo quam aliquet/
-            </div>
-          </div>
-          <div class="item__footer">
-            <div class="item__statistic">
-              <div class="item__statistic-price">$110</div>
-              <div class="item__statistic-likes">46</div>
-            </div>
-            <div class="item__statistic-buys">634</div>
-          </div>
-        </div>
-      </div>
-      <div class="products__link-container">
-        <a href="#" class="products__link-show">All New Products</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="followers-slider">
-    <div class="container">
-      <div class="followers-slider__header products-slider__header">
-        <span class="products-slider__title">Your Followers Feed</span>
-        <div class="products-slider__arrows">
-          <button class="products-slider__arrows-prev">
-            <img src="./images/slider/chevron-left.png" alt="left" class="products-slider__arrow">
-          </button>
-          <button class=" products-slider__arrows-next">
-            <img src="./images/slider/chevron-right.png" alt="right" class="products-slider__arrow">
-          </button>
-        </div>
-      </div>
-
-      <div class="products-slider__slider slider">
-        <div class="slider__inner">
-          <div class="slider__translatex">
-            <div class="products__item item">
-              <div class="item__image-container">
-                <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
-                    </div>
-                  </a>
-                </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
-                </div>
-              </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
-                </div>
-                <div class="item__statistic-buys">634</div>
-              </div>
-            </div>
-
-            <div class="products__item item">
-              <div class="item__image-container">
-                <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
-                    </div>
-                  </a>
-                </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
-                </div>
-              </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
-                </div>
-                <div class="item__statistic-buys">634</div>
-              </div>
-            </div>
-
-
-            <div class="products__item item">
-              <div class="item__image-container">
-                <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
-                    </div>
-                  </a>
-                </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
-                </div>
-              </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
-                </div>
-                <div class="item__statistic-buys">634</div>
-              </div>
-            </div>
-            <div class="products__item item">
-              <div class="item__image-container">
-                <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
-                    </div>
-                  </a>
-                </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
-                </div>
-              </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
-                </div>
-                <div class="item__statistic-buys">634</div>
-              </div>
-            </div>
-            <div class="products__item item">
-              <div class="item__image-container">
+              <div class="products__item item">
                 <div class="item__image-container">
                   <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
                   <div class="item__hover">
@@ -775,76 +683,247 @@
                     <a class="item__live" href="#">Live Demo</a>
                   </div>
                 </div>
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
                     </div>
-                  </a>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
                 </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
-                </div>
-              </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
-                </div>
-                <div class="item__statistic-buys">634</div>
-              </div>
-            </div>
-            <div class="products__item item">
-              <div class="item__image-container">
-                <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
-                <div class="item__hover">
-                  <a class="item__more" href="#">More Info</a>
-                  <a class="item__live" href="#">Live Demo</a>
-                </div>
-              </div>
-              <div class="item__description">
-                <div class="item__description-title">E-commerce Shopping Cart</div>
-                <div class="item__description-person">
-                  <a class="link" href="#">
-                    <div class="item__description-avatar"></div>
-                  </a>
-                  <div class="item__description-name"><a class="link" href="#">AazzTech</a></div>
-                  <a class="link" href="#">
-                    <div class="item__description-type">
-                      <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
-                      WordPress
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
                     </div>
-                  </a>
-                </div>
-                <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
                 </div>
               </div>
-              <div class="item__footer">
-                <div class="item__statistic">
-                  <div class="item__statistic-price">$110</div>
-                  <div class="item__statistic-likes">46</div>
+
+              <div class="products__item item">
+                <div class="item__image-container">
+                  <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+                  <div class="item__hover">
+                    <a class="item__more" href="#">More Info</a>
+                    <a class="item__live" href="#">Live Demo</a>
+                  </div>
                 </div>
-                <div class="item__statistic-buys">634</div>
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
+                    </div>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                </div>
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
+                    </div>
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="products__item item">
+                <div class="item__image-container">
+                  <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+                  <div class="item__hover">
+                    <a class="item__more" href="#">More Info</a>
+                    <a class="item__live" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
+                    </div>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                </div>
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
+                    </div>
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item item">
+                <div class="item__image-container">
+                  <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+                  <div class="item__hover">
+                    <a class="item__more" href="#">More Info</a>
+                    <a class="item__live" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
+                    </div>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                </div>
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
+                    </div>
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item item">
+                <div class="item__image-container">
+                  <div class="item__image-container">
+                    <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+                    <div class="item__hover">
+                      <a class="item__more" href="#">More Info</a>
+                      <a class="item__live" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="item__hover">
+                    <a class="item__more" href="#">More Info</a>
+                    <a class="item__live" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
+                    </div>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                </div>
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
+                    </div>
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
+                </div>
+              </div>
+              <div class="products__item item">
+                <div class="item__image-container">
+                  <img src="./images/slider/slide.jpg" alt="" class="item__image-newest">
+                  <div class="item__hover">
+                    <a class="item__more" href="#">More Info</a>
+                    <a class="item__live" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="item__description">
+                  <div class="item__description-title">E-commerce Shopping Cart</div>
+                  <div class="item__description-person">
+                    <div class="item__description-name">
+                      <a class="link" href="#">
+                        <img class="item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                      </a>
+                      <a class="link" href="#">AazzTech</a>
+                    </div>
+                    <a class="link" href="#">
+                      <div class="item__description-type">
+                        <img src="./images/slider/wordpress.png" alt="type" class="item__description-imagetype">
+                        WordPress
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item__seller-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet/
+                  </div>
+                </div>
+                <div class="item__footer">
+                  <div class="item__statistic">
+                    <div class="item__statistic-price">$110</div>
+                    <div class="item__statistic-likes lnr lnr-heart"><span
+                        class="slider__statistic-likescounter">46</span>
+                    </div>
+                  </div>
+                  <div class="item__statistic-buys lnr lnr-cart"><span class="slider__statistic-buyscounter">643</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <script src="./js/main.min.js"></script>
 </body>
 
