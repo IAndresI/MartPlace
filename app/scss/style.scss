@@ -480,7 +480,7 @@
 
 .products-slider {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   background-color: $content-bg;
 
   &__header {
@@ -805,7 +805,7 @@
     padding-top: 53px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     min-height: 613px;
   }
 
@@ -852,10 +852,7 @@
 
 .item {
 
-  &--tab {
-    transition: all .2s;
-    position: relative;
-  }
+  transition: all .2s;
 
   &__image-container {
     height: 230px;

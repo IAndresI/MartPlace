@@ -39,24 +39,4 @@ function tabs() {
     });
   });
 }
-
 export default tabs;
-
-// (function timer() {
-//   var currentTime = performance.now();
-
-//   if (element.getAttribute("data-category") == element_tab.getAttribute("data-category")) {
-//     element.style.transform = "scaleX(1) scaleY(1)";
-//     if (currentTime - lastTime >= 400) {
-//       element.style.display = "block";
-//       cancelAnimationFrame(timer);
-//     }
-//   } else {
-//     element.style.transform = "scaleX(0) scaleY(0)";
-//     if (currentTime - lastTime >= 400) {
-//       element.style.display = "none";
-//       cancelAnimationFrame(timer);
-//     }
-//   }
-//   requestAnimationFrame(timer);
-// }());
