@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   tabs();
   rangeSlider();
 
+
+
   let slider_image = document.querySelectorAll(".item__image-container"),
     more_info = document.querySelectorAll(".item__hover"),
     image = document.querySelectorAll(".item__image-newest");

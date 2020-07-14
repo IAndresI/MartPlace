@@ -66,3 +66,21 @@ a {
     color: $blue;
   }
 }
+
+.title-text {
+  text-align: center;
+
+  line-height: 30px;
+  max-width: 625px;
+  margin: 0 auto 50px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.title-special {
+  color: $blue;
+}
