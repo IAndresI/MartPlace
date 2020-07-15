@@ -49,6 +49,7 @@ a {
   &--active {
     background-color: $blue;
     color: #ffffff;
+    overflow: hidden;
   }
 
   &:focus {
