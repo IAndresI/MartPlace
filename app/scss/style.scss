@@ -1987,12 +1987,9 @@
     list-style: none;
 
     &--pages {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       max-height: 470px;
-      max-width: 540px;
-
+      columns: 2 170px;
+      column-gap: 40px;
     }
   }
 
@@ -2042,6 +2039,7 @@
       padding: 20px 0;
       border-bottom: 1px solid #e0e8fe;
       color: #000000;
+      column-span: all;
     }
   }
 
