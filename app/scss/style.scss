@@ -926,7 +926,6 @@
     margin-bottom: 30px;
     min-height: 530px;
     max-width: 360px;
-    min-width: 360px;
     background-color: #ffffff;
     border-radius: 5px;
     margin-right: 20px;
@@ -1314,6 +1313,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    list-style: none;
+    padding: 0;
   }
 
   &__item {
@@ -1351,6 +1352,7 @@
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__description-text {
@@ -1369,7 +1371,7 @@
 
   &__side {
     width: 50%;
-    height: 560px;
+    min-height: 560px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1396,6 +1398,7 @@
   &__title {
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__text {
@@ -1559,6 +1562,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
   }
 
   &__item {
@@ -1630,6 +1635,14 @@
 
   .item__more {
     margin-right: 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #b9b9b9;
+    padding: 15px 30px;
   }
 }
 
@@ -1725,10 +1738,6 @@
     margin-bottom: 120px;
   }
 
-  &__item-market {
-    max-width: 265px;
-  }
-
   &__text {
     margin-bottom: 20px;
   }
@@ -1781,8 +1790,16 @@
     margin-bottom: 8px;
   }
 
-  &__item-newsletter {
-    width: 365px;
+  &__item {
+    margin-right: 20px;
+
+    &--newsletter {
+      max-width: 365px;
+    }
+
+    &--market {
+      max-width: 300px;
+    }
   }
 
   &__form {
@@ -1792,7 +1809,7 @@
 
   &__input {
     height: 50px;
-    width: 360px;
+    max-width: 360px;
     border-radius: 40px;
     padding-right: 110px;
     padding-left: 30px;
@@ -1832,6 +1849,9 @@
 
   &__social-list {
     display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
   }
 
   &__social-item {
@@ -1884,6 +1904,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -2343,3 +2364,5 @@
     }
   }
 }
+
+@import "media";
