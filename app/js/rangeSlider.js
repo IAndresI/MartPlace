@@ -13,3 +13,12 @@ function rangeSlider() {
   rightSlider.addEventListener("input", rightSliderSettings);
 }
 export default rangeSlider;
+
+//<div class="test">  Оно мне нада, это для рендж-слайдера))
+//<div class="container">
+//  <div class="test__inner">
+//    <input type="range" class="test__leftinput" min="0" max="100" value="0">
+//    <input type="range" class="test__rightinput" min="0" max="100" value="100">
+//  </div>
+//</div>
+//</div>

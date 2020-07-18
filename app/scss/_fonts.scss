@@ -730,3 +730,60 @@
 .lnr-pointer-left:before {
   content: "\e8a9";
 }
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/SocialNetworks/icomoon.eot?1l9l9x');
+  src: url('../fonts/SocilaNetworks/icomoon.eot') format('eot'),
+    url('../fonts/SocilaNetworks/icomoon.woff') format('woff'),
+    url('../fonts/SocialNetworks/icomoon.ttf') format('ttf'),
+    url('../fonts/SocilaNetworks/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-dribbble:before {
+  content: "\f17d";
+}
+
+.icon-google:before {
+  content: "\f1a0";
+}
+
+.icon-pinterest-p:before {
+  content: "\f231";
+}

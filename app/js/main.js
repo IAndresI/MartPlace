@@ -5,8 +5,8 @@ import tabs from "./tabs";
 import rangeSlider from "./rangeSlider";
 
 document.addEventListener("DOMContentLoaded", function () {
-  slider(".slider__item", ".slider__translatex", ".products-slider__arrows-next", ".products-slider__arrows-prev");
-  slider(".products__item--slider1", ".slider__translatex--slider1", ".products-slider__arrows-next--slider1", ".products-slider__arrows-prev--slider1", 3);
+  slider(".slider__item", ".slider__translatex", ".products-slider__next", ".products-slider__prev");
+  slider(".products__item--slider1", ".slider__translatex--slider1", ".products-slider__next--slider1", ".products-slider__prev--slider1", 3);
   rate(".rate-star");
   tabs();
   rangeSlider();
