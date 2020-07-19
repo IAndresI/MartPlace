@@ -1,0 +1,68 @@
+function navMiniDropdown() {
+  let menu_icon = document.querySelector(".menu__icon"),
+    menu_mini = document.querySelector(".menu__nav--mini .menu__list");
+
+  menu_icon.addEventListener("click", (e) => {
+
+    menu_mini.classList.toggle("show");
+
+
+    if (menu_mini.classList.contains("show")) {
+      menu_mini.style.overflow = "visible";
+    } else {
+      menu_mini.style.overflow = "hidden";
+    }
+  });
+
+  let all = document.querySelectorAll(".menu__nav--mini .dropdown"),
+    home = document.querySelector(".menu__nav--mini .menu__home"),
+    home_dropdown = document.querySelector(".menu__nav--mini .dropdown--home"),
+    products = document.querySelector(".menu__nav--mini .menu__products"),
+    products_dropdown = document.querySelector(".menu__nav--mini .dropdown--products"),
+    wordpress = document.querySelector(".menu__nav--mini .menu__wordpress"),
+    wordpress_dropdown = document.querySelector(".menu__nav--mini .dropdown--wordpress"),
+    festures = document.querySelector(".menu__nav--mini .menu__festures"),
+    festures_dropdown = document.querySelector(".menu__nav--mini .dropdown--festures"),
+    pages = document.querySelector(".menu__nav--mini .menu__pages"),
+    pages_dropdown = document.querySelector(".menu__nav--mini .dropdown--pages");
+
+  home.addEventListener("click", () => {
+    all.forEach(element => {
+      if (!(element.classList.contains("dropdown--home")))
+        element.classList.remove("show");
+    });
+    home_dropdown.classList.toggle("show");
+  });
+  products.addEventListener("click", () => {
+    all.forEach(element => {
+      if (!(element.classList.contains("dropdown--products")))
+        element.classList.remove("show");
+    });
+    products_dropdown.classList.toggle("show");
+  });
+  wordpress.addEventListener("click", () => {
+    all.forEach(element => {
+      if (!(element.classList.contains("dropdown--wordpress")))
+        element.classList.remove("show");
+    });
+    wordpress_dropdown.classList.toggle("show");
+  });
+  festures.addEventListener("click", () => {
+    all.forEach(element => {
+      if (!(element.classList.contains("dropdown--festures")))
+        element.classList.remove("show");
+    });
+    festures_dropdown.classList.toggle("show");
+  });
+  pages.addEventListener("click", () => {
+    all.forEach(element => {
+      if (!(element.classList.contains("dropdown--pages")))
+        element.classList.remove("show");
+    });
+    pages_dropdown.classList.toggle("show");
+  });
+
+}
+
+
+export default navMiniDropdown;

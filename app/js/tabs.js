@@ -1,6 +1,6 @@
 function tabs() {
   let tabs = document.querySelectorAll(".products__categories-item"),
-    tab_content = document.querySelectorAll(".item--tab");
+    tab_content = document.querySelectorAll(".product-item--tab");
 
   tabs.forEach(element_tab => {
     element_tab.addEventListener("click", function (e) {
