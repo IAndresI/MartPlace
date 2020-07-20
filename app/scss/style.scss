@@ -874,11 +874,15 @@
   transition: all .2s;
 
   &__item {
-    margin-bottom: 30px;
     max-width: 360px;
     border-radius: 5px;
-    margin-right: 20px;
     background-color: #ffffff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &--slider0 {
+      width: 1170px;
+    }
   }
 
   &__inner {
@@ -890,6 +894,11 @@
 
     &--slider1 {
       display: flex;
+
+      .product-item__item {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -929,9 +938,11 @@
     border: 1px solid #ffffff;
     color: #ffffff;
     border-radius: 40px;
-    padding: 12px 30px;
+    padding: 12px 25px;
     margin-right: 20px;
     text-decoration: none;
+    min-width: 150px;
+    text-align: center;
     transition: all .4s;
     cursor: pointer;
 
@@ -1128,13 +1139,12 @@
       }
 
       &__item {
-        margin-bottom: 0;
         border-radius: none;
-        margin-right: 0;
-
-        max-width: 1170px;
         border-radius: 4px;
         display: flex;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
       }
 
       &__image-hover {
@@ -1147,34 +1157,6 @@
         overflow: hidden;
         transition: all .4s;
         border-radius: 0 0 0 4px;
-      }
-
-      &__image-more,
-      &__image-live {
-        background-color: transparent;
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        border-radius: 40px;
-        padding: 12px 25px;
-        margin-right: 20px;
-        text-decoration: none;
-        min-width: 130px;
-        text-align: center;
-        transition: all .4s;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-
-        &:hover {
-          background-color: #ffffff;
-          color: $blue;
-        }
-
-        &:active {
-          box-shadow: inset 0 0 10px 2px #b9b9b9;
-        }
       }
 
       &__image-live {
@@ -1994,7 +1976,6 @@
 
   &__input {
     height: 50px;
-    min-width: 360px;
     border-radius: 40px;
     padding-right: 110px;
     padding-left: 30px;
@@ -2677,6 +2658,11 @@
 .show {
   max-height: 2000px !important;
   z-index: 3;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
 }
 
 @import "media";

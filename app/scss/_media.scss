@@ -63,6 +63,19 @@
         left: 43%;
       }
     }
+
+    &--pages {
+      left: auto;
+      right: 0;
+    }
+
+    &--home,
+    &--wordpress,
+    &--products,
+    &--festures,
+    &--pages {
+      top: 20px;
+    }
   }
 
   .footer {
@@ -370,6 +383,10 @@
       margin-right: 0;
     }
 
+    &__item {
+      margin-right: 0;
+    }
+
     &__item--market {
       margin-right: 0;
     }
@@ -408,9 +425,20 @@
       text-align: center;
     }
 
+    &__image-more {
+      margin-right: 0 !important;
+      margin-bottom: 20px;
+    }
+
+    &__seller-description {
+      text-align: center;
+    }
+
     &__statistic {
       justify-content: space-between;
       flex-wrap: wrap;
+      display: block !important;
+      margin-bottom: 10px;
 
       .item__statistic-likes {
         order: 1;
@@ -425,8 +453,21 @@
       }
     }
 
-    &__statistic-buys {
-      height: 20px;
+    &__price {
+      margin-right: 0 !important;
+      margin-bottom: 15px;
+    }
+
+    &__likes {
+      display: flex !important;
+      margin-right: 0 !important;
+      justify-content: center;
+      width: 100% !important;
+      height: 30px;
+    }
+
+    &__buys {
+      height: 30px;
     }
 
     &__hover {
@@ -435,6 +476,7 @@
 
     &__more {
       margin-bottom: 20px;
+      margin-right: 0;
     }
 
     &--big {
@@ -449,6 +491,22 @@
 
     &__footer {
       min-height: 110px;
+    }
+
+    &__description-person {
+      display: block;
+    }
+
+    &__description-name {
+      margin-bottom: 5px;
+    }
+
+    &__tags {
+      justify-content: center;
+
+      .product-item__tag {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -513,6 +571,12 @@
   .products {
     &__categories-item {
       margin-bottom: 10px;
+    }
+  }
+
+  .news {
+    &__footer {
+      padding: 15px 10px;
     }
   }
 }
