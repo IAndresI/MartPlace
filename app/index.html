@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <div class="header__top-menu ">
+    <div class="header__top-menu">
       <div class="container top-menu">
         <a href="#" class="header__link header__link--logo">
           <img src="./images/header/logo.png" alt="logo" class="top-menu__logo">
@@ -21,9 +21,9 @@
           <a class="top-menu__link link" href="#">Become a Seller</a>
           <div class="top-menu__icons-list">
             <div class="top-menu__icons-item">
-              <div class="header__button header__button--alarm">
+              <div class="top-menu__button top-menu__button--alarm">
                 <div class="top-menu__icon lnr lnr-alarm"><span class="screen-reader">check alerts</span></div>
-                <div class="top-menu__counter-alarm counter">174</div>
+                <div class="top-menu__counter top-menu__counter--alarm">174</div>
                 <div class="top-menu__dropdown dropdown dropdown--alarm">
                   <div class="dropdown__inner">
                     <div class="dropdown__header">
@@ -99,8 +99,7 @@
                               <p class="alarm__text">Marketify coffee shop</p>
                               <time class="alarm__time">Just now</time>
                             </div>
-                            <div class="dropdown__imagetype dropdown__imagetype--star">
-                              <span class="lnr lnr-star"></span>
+                            <div class="dropdown__imagetype dropdown__imagetype--star lnr lnr-star">
                             </div>
                           </div>
                         </a>
@@ -112,9 +111,9 @@
               </div>
             </div>
             <div class="top-menu__icons-item">
-              <div class="header__button header__button--message">
+              <div class="top-menu__button top-menu__button--message">
                 <div class="top-menu__icon lnr lnr-envelope"><span class="screen-reader">check messeges</span></div>
-                <div class="top-menu__counter-messege counter">1</div>
+                <div class="top-menu__counter top-menu__counter--message">1</div>
 
                 <div class="top-menu__dropdown dropdown dropdown--messege">
                   <div class="dropdown__inner">
@@ -185,9 +184,9 @@
               </div>
             </div>
             <div class="top-menu__icons-item">
-              <div href="#" class="header__button header__button--cart">
+              <div href="#" class="top-menu__button top-menu__button--cart">
                 <div class="top-menu__icon lnr lnr-cart"><span class="screen-reader">check shopping cart</span></div>
-                <div class="top-menu__counter-cart counter">32</div>
+                <div class="top-menu__counter top-menu__counter--cart">32</div>
 
                 <div class="top-menu__dropdown dropdown dropdown--cart">
                   <div class="dropdown__inner dropdown__inner--cart">
@@ -243,36 +242,37 @@
             </div>
           </div>
           <div class="top-menu__container">
-            <a class="top-menu__user-info link" href="#">
+            <div class="top-menu__user-info">
               <img class="top-menu__user-image" alt="avatar" src="./images/header/logo.png">
               <div class="top-menu__user-namebal">
-                <div href="#" class="header__link top-menu__user-name">
+                <a href="#" class="header__link top-menu__user-name">
                   Andre Spez
-                </div>
+                </a>
 
-                <div href="#" class="top-menu__balance-link">
+                <a href="#" class="top-menu__balance-link">
                   $234234250.5
-                </div>
+                </a>
               </div>
 
               <div class="top-menu__dropdown dropdown dropdown--user">
                 <div class="dropdown__inner dropdown__inner--user">
                   <ul class="dropdown__list">
-                    <li class="dropdown__user-item lnr lnr-user">Profile Page</li>
-                    <li class="dropdown__user-item lnr lnr-home">Dashboard</li>
-                    <li class="dropdown__user-item lnr lnr-cog">Account Settings</li>
-                    <li class="dropdown__user-item lnr lnr-cart">Your Purchases</li>
-                    <li class="dropdown__user-item lnr lnr-heart">Your Favorites</li>
-                    <li class="dropdown__user-item lnr lnr-dice">Add Credits</li>
-                    <li class="dropdown__user-item lnr lnr-chart-bars">Sales Statements</li>
-                    <li class="dropdown__user-item lnr lnr-upload">Upload Item</li>
-                    <li class="dropdown__user-item lnr lnr-book">Edit Item</li>
-                    <li class="dropdown__user-item lnr lnr-briefcase">Withdrawals</li>
-                    <li class="dropdown__user-item lnr lnr-exit">Logout</li>
+                    <li class="dropdown__user-item lnr lnr-user"><a href="#" class="link">Profile Page</a> </li>
+                    <li class="dropdown__user-item lnr lnr-home"><a href="#" class="link">Dashboard</a> </li>
+                    <li class="dropdown__user-item lnr lnr-cog"><a href="#" class="link">Account Settings</a> </li>
+                    <li class="dropdown__user-item lnr lnr-cart"><a href="#" class="link">Your Purchases</a> </li>
+                    <li class="dropdown__user-item lnr lnr-heart"><a href="#" class="link">Your Favorites</a> </li>
+                    <li class="dropdown__user-item lnr lnr-dice"><a href="#" class="link">Add Credits</a> </li>
+                    <li class="dropdown__user-item lnr lnr-chart-bars"><a href="#" class="link">Sales Statements</a>
+                    </li>
+                    <li class="dropdown__user-item lnr lnr-upload"><a href="#" class="link">Upload Item</a> </li>
+                    <li class="dropdown__user-item lnr lnr-book"><a href="#" class="link">Edit Item</a> </li>
+                    <li class="dropdown__user-item lnr lnr-briefcase"><a href="#" class="link">Withdrawals</a> </li>
+                    <li class="dropdown__user-item lnr lnr-exit"><a href="#" class="link">Logout</a> </li>
                   </ul>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -463,11 +463,11 @@
             </ul>
           </nav>
           <div class="menu__nav menu__nav--mini">
-            <div class="menu__icon">
+            <button class="menu__icon">
               <div class="menu__line"></div>
               <div class="menu__line"></div>
               <div class="menu__line"></div>
-            </div>
+            </button>
             <ul class="menu__list">
               <li class="menu__item menu__item--home">
                 <span class="menu__home">home</span>
@@ -1002,7 +1002,7 @@
         <div class="products__header">
           <div class="products__header-title">Newest Release Products</div>
           <div class="products__header-filter release-filter">
-            <span class="release-filter__title">Filter by:</span>
+            <button class="release-filter__title-button">Filter by:</button>
             <div class="release-filter__list-container">
               <ul class="release-filter__list">
                 <li class="release-filter__item"><button class="release-filter__button">Tranding items</button></li>
@@ -1922,24 +1922,24 @@
             <input type="email" class="footer__input" placeholder="Enter email">
             <button class="footer__submit" type="submit">Submit</button>
           </form>
-          <ul class="footer__social-list">
-            <li class="footer__social-item footer__social-item--facebook">
-              <a href="#" class="footer__social-link footer__social-link--facebook"></a>
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item social-list--facebook">
+              <a href="#" class="social-list__link social-list__link--facebook"></a>
             </li>
-            <li class="footer__social-item footer__social-item--twitter">
-              <a href="#" class="footer__social-link footer__social-link--twitter"></a>
+            <li class="social-list__item social-list--twitter">
+              <a href="#" class="social-list__link social-list__link--twitter"></a>
             </li>
-            <li class="footer__social-item footer__social-item--gmail">
-              <a href="#" class="footer__social-link footer__social-link--gmail"></a>
+            <li class="social-list__item social-list--gmail">
+              <a href="#" class="social-list__link social-list__link--gmail"></a>
             </li>
-            <li class="footer__social-item footer__social-item--pinterset">
-              <a href="#" class="footer__social-link footer__social-link--pinterset"></a>
+            <li class="social-list__item social-list--pinterset">
+              <a href="#" class="social-list__link social-list__link--pinterset"></a>
             </li>
-            <li class="footer__social-item footer__social-item--linkedin">
-              <a href="#" class="footer__social-link footer__social-link--linkedin"></a>
+            <li class="social-list__item social-list--linkedin">
+              <a href="#" class="social-list__link social-list__link--linkedin"></a>
             </li>
-            <li class="footer__social-item footer__social-item--ball">
-              <a href="#" class="footer__social-link footer__social-link--ball"></a>
+            <li class="social-list__item social-list--ball">
+              <a href="#" class="social-list__link social-list__link--ball"></a>
             </li>
           </ul>
         </div>

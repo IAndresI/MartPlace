@@ -111,16 +111,57 @@
 
     }
   }
+
+  .preview {
+    &__inner {
+      padding-top: 110px;
+    }
+
+    &__search {
+      bottom: 5px;
+    }
+
+    &__search-bg1 {
+      bottom: 18px;
+    }
+
+    &__search-bg2 {
+      bottom: 31px;
+    }
+  }
 }
 
 @media(max-width: 992px) {
 
   .works {
+
+    margin-bottom: 20px;
+
     &__inner {
       flex-wrap: wrap;
     }
   }
 
+  .products-slider,
+  .followers-slider,
+  .choose,
+  .feedback,
+  .news,
+  .footer {
+    padding: 50px 0;
+  }
+
+  .products {
+    padding: 50px 0;
+
+    &__link-container {
+      height: 56px;
+    }
+
+    &__link-show {
+      height: 100%;
+    }
+  }
 
   .product-item--big {
 
@@ -232,6 +273,10 @@
 
   .preview {
 
+    &__inner {
+      padding-top: 100px;
+    }
+
     &__search {
       bottom: -145px;
     }
@@ -279,6 +324,11 @@
   }
 
   .shopping-sale {
+
+    &__side-content {
+      padding-top: 10px;
+    }
+
     &__inner {
       display: block !important;
     }
@@ -336,6 +386,18 @@
 }
 
 @media(max-width: 576px) {
+
+  .products-slider__title,
+  .products__header-title,
+  .products-slider__title {
+    font-size: 20px;
+  }
+
+  .choose {
+    &__item {
+      padding: 60px 0;
+    }
+  }
 
   .menu {
     padding-bottom: 10px;
@@ -399,7 +461,9 @@
   .feedback {
     &__review-item {
       min-width: 290px;
-      padding: 30px 10px;
+      padding: 0;
+      padding-left: 5px;
+      width: 100%;
     }
 
     &__messege-image {
@@ -415,6 +479,15 @@
   }
 
   .product-item {
+
+    &--big {
+
+      .product-item {
+        &__description {
+          padding: 25px 0 0 0 !important;
+        }
+      }
+    }
 
     &__item {
       margin-right: 0;
@@ -493,6 +566,10 @@
       min-height: 110px;
     }
 
+    &__description {
+      padding: 25px 0 0 0;
+    }
+
     &__description-person {
       display: block;
     }
@@ -537,6 +614,11 @@
 
   .preview {
 
+    &__h2,
+    &__h1 {
+      font-size: 20px;
+    }
+
     &__search-bg2,
     &__search-bg1 {
       display: none;
@@ -571,6 +653,10 @@
   .products {
     &__categories-item {
       margin-bottom: 10px;
+    }
+
+    &__categories-list {
+      padding-top: 10px;
     }
   }
 
