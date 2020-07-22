@@ -1,30 +1,24 @@
 function navMiniDropdown() {
   let menu_icon = document.querySelector(".menu__icon"),
-    menu_mini = document.querySelector(".menu__nav--mini .menu__list");
+    menu_mini = document.querySelector(".menu__nav");
 
   menu_icon.addEventListener("click", (e) => {
 
     menu_mini.classList.toggle("show");
-
-
-    if (menu_mini.classList.contains("show")) {
-      menu_mini.style.overflow = "visible";
-    } else {
-      menu_mini.style.overflow = "hidden";
-    }
   });
 
-  let all = document.querySelectorAll(".menu__nav--mini .dropdown"),
-    home = document.querySelector(".menu__nav--mini .menu__home"),
-    home_dropdown = document.querySelector(".menu__nav--mini .dropdown--home"),
-    products = document.querySelector(".menu__nav--mini .menu__products"),
-    products_dropdown = document.querySelector(".menu__nav--mini .dropdown--products"),
-    wordpress = document.querySelector(".menu__nav--mini .menu__wordpress"),
-    wordpress_dropdown = document.querySelector(".menu__nav--mini .dropdown--wordpress"),
-    festures = document.querySelector(".menu__nav--mini .menu__festures"),
-    festures_dropdown = document.querySelector(".menu__nav--mini .dropdown--festures"),
-    pages = document.querySelector(".menu__nav--mini .menu__pages"),
-    pages_dropdown = document.querySelector(".menu__nav--mini .dropdown--pages");
+
+  let all = document.querySelectorAll(".dropdown"),
+    home = document.querySelector(".menu__item--home"),
+    home_dropdown = document.querySelector(".dropdown--home"),
+    products = document.querySelector(".menu__item--products"),
+    products_dropdown = document.querySelector(".dropdown--products"),
+    wordpress = document.querySelector(".menu__item--wordpress"),
+    wordpress_dropdown = document.querySelector(".dropdown--wordpress"),
+    festures = document.querySelector(".menu__item--festures"),
+    festures_dropdown = document.querySelector(".dropdown--festures"),
+    pages = document.querySelector(".menu__item--pages"),
+    pages_dropdown = document.querySelector(".dropdown--pages");
 
   home.addEventListener("click", () => {
     all.forEach(element => {
