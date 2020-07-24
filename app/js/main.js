@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
   navMiniDropdown();
   rangeSlider();
   rate(".rate-star");
