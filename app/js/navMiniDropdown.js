@@ -3,8 +3,7 @@ function navMiniDropdown() {
     menu_mini = document.querySelector(".menu__nav");
 
   menu_icon.addEventListener("click", (e) => {
-
-    menu_mini.classList.toggle("show");
+    menu_mini.classList.toggle("show-lg");
   });
 
 
