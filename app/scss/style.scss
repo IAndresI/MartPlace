@@ -3085,6 +3085,10 @@
     height: 100%;
     top: 0;
     color: $text-color;
+
+    &--active {
+      fill: $blue;
+    }
   }
 
   &__radio {
@@ -3092,10 +3096,6 @@
     width: 100%;
     z-index: -3;
   }
-}
-
-.asd {
-  fill: $blue;
 }
 
 .product-page {
