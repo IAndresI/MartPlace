@@ -14,8 +14,8 @@ function navMiniDropdown() {
     products_dropdown = document.querySelector(".dropdown--products"),
     wordpress = document.querySelector(".menu__item--wordpress"),
     wordpress_dropdown = document.querySelector(".dropdown--wordpress"),
-    festures = document.querySelector(".menu__item--festures"),
-    festures_dropdown = document.querySelector(".dropdown--festures"),
+    features = document.querySelector(".menu__item--features"),
+    features_dropdown = document.querySelector(".dropdown--features"),
     pages = document.querySelector(".menu__item--pages"),
     pages_dropdown = document.querySelector(".dropdown--pages");
 
@@ -40,12 +40,12 @@ function navMiniDropdown() {
     });
     wordpress_dropdown.classList.toggle("show");
   });
-  festures.addEventListener("click", () => {
+  features.addEventListener("click", () => {
     all.forEach(element => {
-      if (!(element.classList.contains("dropdown--festures")))
+      if (!(element.classList.contains("dropdown--features")))
         element.classList.remove("show");
     });
-    festures_dropdown.classList.toggle("show");
+    features_dropdown.classList.toggle("show");
   });
   pages.addEventListener("click", () => {
     all.forEach(element => {
