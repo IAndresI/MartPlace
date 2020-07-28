@@ -2,6 +2,7 @@
 import slider from "./slider";
 import rate from "./rate";
 import tabs from "./tabs";
+import blog from "./blog";
 import rangeSlider from "./rangeSlider";
 import navMiniDropdown from "./navMiniDropdown";
 import categoryPageDropdown from "./categoryPageDropdown";
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  blog();
   navMiniDropdown();
   rangeSlider();
   rate(".rate-star");

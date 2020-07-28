@@ -66,6 +66,12 @@
     }
   }
 
+  .author-news {
+    &__list {
+      justify-content: space-evenly;
+    }
+  }
+
   .news {
     &__list {
       justify-content: space-evenly;
