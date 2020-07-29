@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__top-menu">
       <div class="container top-menu">
-        <a href="#" class="header__link header__link--logo">
+        <a href="#" class="top-menu__logo-link">
           <img src="./images/header/logo.png" alt="logo" class="top-menu__logo">
         </a>
         <div class="top-menu__content">
@@ -249,17 +249,22 @@
             <div class="top-menu__dropdown dropdown dropdown--user">
               <div class="dropdown__inner dropdown__inner--user">
                 <ul class="dropdown__list">
-                  <li class="dropdown__user-item lnr lnr-user"><a href="#" class="link">Profile Page</a> </li>
-                  <li class="dropdown__user-item lnr lnr-home"><a href="#" class="link">Dashboard</a> </li>
-                  <li class="dropdown__user-item lnr lnr-cog"><a href="#" class="link">Account Settings</a> </li>
-                  <li class="dropdown__user-item lnr lnr-cart"><a href="#" class="link">Your Purchases</a> </li>
-                  <li class="dropdown__user-item lnr lnr-heart"><a href="#" class="link">Your Favorites</a> </li>
-                  <li class="dropdown__user-item lnr lnr-dice"><a href="#" class="link">Add Credits</a> </li>
-                  <li class="dropdown__user-item lnr lnr-chart-bars"><a href="#" class="link">Sales Statements</a></li>
-                  <li class="dropdown__user-item lnr lnr-upload"><a href="#" class="link">Upload Item</a> </li>
-                  <li class="dropdown__user-item lnr lnr-book"><a href="#" class="link">Edit Item</a> </li>
-                  <li class="dropdown__user-item lnr lnr-briefcase"><a href="#" class="link">Withdrawals</a> </li>
-                  <li class="dropdown__user-item lnr lnr-exit"><a href="#" class="link">Logout</a> </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-user link">Profile Page</a> </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-home link">Dashboard</a> </li>
+                  <li class="dropdown__user-item"><a href="#" class="lnr-cog link">Account Settings</a>
+                  </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-cart link">Your Purchases</a>
+                  </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-heart link">Your Favorites</a>
+                  </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-dice link">Add Credits</a> </li>
+                  <li class="dropdown__user-item"><a href="#" class="lnr-chart-bars link">Sales
+                      Statements</a></li>
+                  <li class="dropdown__user-item"><a href="#" class="lnr-upload link">Upload Item</a>
+                  </li>
+                  <li class="dropdown__user-item "><a href="#" class="lnr-book link">Edit Item</a> </li>
+                  <li class="dropdown__user-item"><a href="#" class="lnr-briefcase link">Withdrawals</a> </li>
+                  <li class="dropdown__user-item"><a href="#" class="lnr-exit link">Logout</a> </li>
                 </ul>
               </div>
             </div>
@@ -282,61 +287,107 @@
               <li class="menu__item menu__item--home">
                 <a href="#" class="link">
                   home
-                  <div class="top-menu__dropdown dropdown dropdown--home">
-                    <div class="dropdown__inner">
-                      <ul class="dropdown__list">
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home One Multi
-                            User</a></li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home Two Single
-                            User</a> </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home Three Product
-                          </a> </li>
-                      </ul>
-                    </div>
-                  </div>
                 </a>
+                <div class="top-menu__dropdown dropdown dropdown--home">
+                  <div class="dropdown__inner">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home One Multi
+                          User</a></li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home Two Single
+                          User</a> </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Home Three Product
+                        </a> </li>
+                    </ul>
+                  </div>
+                </div>
+
 
               </li>
               <li class="menu__item menu__item--products">
                 <a href="#" class="link">
                   all poducts
-                  <div class="top-menu__dropdown dropdown dropdown--products">
-                    <div class="dropdown__inner">
-                      <ul class="dropdown__list">
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Recent Items </a>
-                        </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items </a>
-                        </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Featured Items</a>
-                        </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Free Templates</a>
-                        </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Follow Feed </a>
-                        </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Top Authors </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </a>
+                <div class="top-menu__dropdown dropdown dropdown--products">
+                  <div class="dropdown__inner">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Recent Items </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Featured Items</a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Free Templates</a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Follow Feed </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Top Authors </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
 
               </li>
               <li class="menu__item menu__item--wordpress">
                 <a href="#" class="link">
                   wordpress
-                  <div class="top-menu__dropdown dropdown dropdown--wordpress">
-                    <div class="dropdown__inner">
-                      <ul class="dropdown__list">
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items </a>
+                </a>
+                <div class="top-menu__dropdown dropdown dropdown--wordpress">
+                  <div class="dropdown__inner">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
+                          News</a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a> </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate Businessr
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment </a>
+                      </li>
+                      <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </li>
+              <li class="menu__item menu__item--features">
+                <a href="#" class="link">
+                  features
+                </a>
+              </li>
+              <li class="menu__item menu__item--pages">
+                <a href="#" class="link">
+                  pages
+                </a>
+                <div class="top-menu__dropdown dropdown dropdown--pages">
+                  <div class="dropdown__inner dropdown__inner--pages">
+                    <div class="dropdown__container">
+                      <div class="dropdown__title dropdown__title--pages">MartPlace Pages</div>
+                      <ul class="dropdown__list dropdown__list--pages">
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
+                          </a>
                         </li>
                         <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
                           </a>
                         </li>
                         <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
-                            News</a>
+                            News</a> </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a> </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate Businessr
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
+                            Businessr
                           </a>
                         </li>
                         <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
@@ -344,155 +395,94 @@
                         </li>
                         <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
+                          </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
+                            Businessr
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
+                          </a>
                         </li>
                       </ul>
                     </div>
-                  </div>
-                </a>
-
-              </li>
-              <li class="menu__item menu__item--features">
-                <a href="#" class="link">
-                  features
-                  <div class="top-menu__dropdown dropdown dropdown--features">
-                    <div class="dropdown__inner">
+                    <div class="dropdown__container">
+                      <div class="dropdown__title dropdown__title--pages">Dashboard</div>
                       <ul class="dropdown__list">
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Recent Items </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
+                          </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
+                          </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Featured Items</a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
+                            News</a> </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Free Templates</a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
+                            Businessr
+                          </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Follow Feed </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
+                          </a>
                         </li>
-                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Top Authors </a>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__container">
+                      <div class="dropdown__title dropdown__title--pages">Other Pages</div>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
+                            News</a></li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
+                            Businessr
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
+                          </a>
+                        </li>
+                        <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
+                          </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </a>
+                </div>
 
-              </li>
-              <li class="menu__item menu__item--pages">
-                <a href="#" class="link">
-                  pages
-                  <div class="top-menu__dropdown dropdown dropdown--pages">
-                    <div class="dropdown__inner dropdown__inner--pages">
-                      <div class="dropdown__container">
-                        <div class="dropdown__title dropdown__title--pages">MartPlace Pages</div>
-                        <ul class="dropdown__list dropdown__list--pages">
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
-                              News</a> </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
-                              Businessr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
-                              Businessr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="dropdown__container">
-                        <div class="dropdown__title dropdown__title--pages">Dashboard</div>
-                        <ul class="dropdown__list">
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
-                              News</a> </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
-                              Businessr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="dropdown__container">
-                        <div class="dropdown__title dropdown__title--pages">Other Pages</div>
-                        <ul class="dropdown__list">
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Popular Items
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Admin Templatesr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Blog / Magazine /
-                              News</a></li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Creative </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Corporate
-                              Businessr
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Resume Portfolio
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">eCommerce </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Entertainment
-                            </a>
-                          </li>
-                          <li class="dropdown__menu-item"><a href="#" class="dropdown__menu-link link">Landing Pages
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </a>
 
               </li>
             </ul>
@@ -586,11 +576,12 @@
               <div class="products-slider__translatex products-slider__translatex--big">
                 <div class="product-item product-item--big">
                   <div class="product-item__image-container">
-                    <img src="./images/slider/slide.jpg" alt="item-image" class="product-item__image">
                     <div class="product-item__hover">
                       <a class="product-item__more" href="#">More Info</a>
                       <a class="product-item__live" href="#">Live Demo</a>
                     </div>
+                    <img src="./images/slider/slide.jpg" alt="item-image" class="product-item__image">
+
                   </div>
                   <div class="product-item__description">
                     <div class="product-item__title">One Page Resume Template</div>
@@ -1421,8 +1412,8 @@
             <li class="choose__item">
               <span class="choose__number">06</span>
               <div class="choose__image choose__image--phone lnr lnr-phone"></div>
-              <div class="choose____title">One Time Payment</div>
-              <div class="choose____text">
+              <div class="choose__title">One Time Payment</div>
+              <div class="choose__text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
                 ut scelerisque the mattis, leo quam aliquet diamcongue is laoreet elit metus.
               </div>
@@ -1668,7 +1659,7 @@
           </form>
           <ul class="footer__social-list social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link social-list__link"></a>
+              <a href="#" class="social-list__link"></a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--twitter"></a>

@@ -11,7 +11,7 @@ function slider(slider__item, slider__translateX, slider__button__next, slider__
     startX = 0,
     endX = 0;
 
-  if (slider_item) {
+  if (slider_transitionx) {
     let DOCUMENT_SLIDER_WIDTH = document.documentElement.clientWidth,
       SLIDE_WIDTH = document.querySelector(".product-item").offsetWidth,
       INNER_SLIDE_WIDTH = document.querySelector(".products-slider__inner").offsetWidth;

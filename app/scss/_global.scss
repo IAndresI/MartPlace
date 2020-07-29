@@ -27,6 +27,7 @@ a {
 }
 
 .link-lg {
+  background-color: $blue;
   text-decoration: none;
   color: inherit;
   padding: 18px 20px;
@@ -34,7 +35,6 @@ a {
   border-radius: 40px;
   border: 1px solid $blue;
   color: #ffffff;
-  background-color: transparent;
   transition: all .4s;
   min-width: 190px;
   cursor: pointer;

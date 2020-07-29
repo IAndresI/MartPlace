@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace-product</title>
+  <title>MartPlace-favorites</title>
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -502,357 +502,533 @@
         <div class="breadcrumps__inner">
           <ul class="breadcrumps__list">
             <li class="breadcrumps__item"><a href="#" class="link">Home</a></li>
-            <li class="breadcrumps__item"><a href="#" class="link">Wordpress</a></li>
-            <li class="breadcrumps__item"><span class="breadcrumps__disabled">Corporate & Business</span></li>
+            <li class="breadcrumps__item"><span class="breadcrumps__disabled">Favourites</span></li>
           </ul>
-          <div class="breadcrumps__title">Wrost - Material Design Responsive Real Estate Template</div>
+          <div class="breadcrumps__title">Your Favourites</div>
         </div>
       </div>
     </section>
 
-    <section class="product">
+    <section class="filter filter--favorite">
       <div class="container">
-        <div class="product__inner">
-          <div class="product__content">
-            <div class="product__preview">
-              <img src="./images/slider/slide.jpg" alt="priview-image" class="product__image">
-              <div class="product__button-container">
-                <button class="product__button">Live Preview</button>
-                <button class="product__button product__button--purple lnr-heart">Add To Favorites</button>
-              </div>
-              <div class="product__link-container">
-                <button class="product__button product__button--black">Share this item</button>
-                <ul class="product__social-list social-list">
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--twitter"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--gmail"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--pinterset"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--linkedin"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--ball"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="product__tab">
-              <ul class="product__tab-list">
-                <li class="product__tab-item">
-                  <button class="product__tab-button" data-tab="0">
-                    Item Details
-                  </button>
-                </li>
-                <li class="product__tab-item"><button class="product__tab-button product__tab-button--1"
-                    data-tab="1">Comments
-                    (35)</button> </li>
-                <li class="product__tab-item"><button class="product__tab-button" data-tab="2">Reviews </button> </li>
-                <li class="product__tab-item"><button class="product__tab-button" data-tab="3">Support </button> </li>
-                <li class="product__tab-item"><button class="product__tab-button" data-tab="4">Item FAQs </button> </li>
-              </ul>
-              <div class="product__tab-content" data-content="0">
-                <div class="product__title">Landing Page Details</div>
-                <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                  scelerisque
-                  the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                  scel erisque the mattis, leo quam aliquet congue justo ut scelerisque. Praesent pharetra, justo ut
-                  scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                <div class="product__title">Features With HTML List Unordered:</div>
-                <ul class="product__list product__list--success">
-                  <li class="product__item">Six different themes for product slider</li>
-                  <li class="product__item">Featured products slider form selected categories.</li>
-                  <li class="product__item">Product slider form specific categories of products. Include or exclude
-                    categories.</li>
-                  <li class="product__item">Product slider form specific tags of products. Include or exclude tags. New
-                  </li>
-                </ul>
-                <div class="product__title">Features With HTML List Ordered:</div>
-                <ol class="product__list">
-                  <li class="product__item">Product slider form specific categories of products. Include or exclude
-                    categories.</li>
-                  <li class="product__item">Product slider form specific tags of products. Include or exclude tags. New
-                  </li>
-                  <li class="product__item">Product slider form specific selected products.</li>
-                  <li class="product__item">Product slider form specific products by product SKU.</li>
-                </ol>
-                <div class="product__title">Features With Big Image:</div>
-                <img src="./images/slider/slide.jpg" alt="product-image" class="product__image product__image--big">
-              </div>
-              <div class="product__tab-content product__tab-content--1" data-content="1">content1</div>
-              <div class="product__tab-content" data-content="2">content2</div>
-              <div class="product__tab-content" data-content="3">content3</div>
-              <div class="product__tab-content" data-content="4">content4</div>
-            </div>
+        <div class="filter__inner">
+          <div class="filter__favorites-found"><span class="filter__favorites-count">570</span> Favorites Found</div>
+          <div class="filter__select-container filter__select-container--small">
+            <select class="filter__select filter__select--small filter__filter-by">
+              <option value="1" disabled selected>Filter By</option>
+              <option value="2">Price</option>
+              <option value="3">Popular</option>
+            </select>
           </div>
-          <div class="product__specification specification">
-            <div class="specification__buy">
-              <div class="specification__price-container">
-                <span class="specification__price">60.00</span>
-              </div>
-              <div class="specification__inner">
-                <form class="specification__form form">
-                  <div class="form__checkbox">
-                    <input name="rad" id="10" type="radio" class="form__checkbox-button">
-                    <label class="form__label" for="10">Single User License</label>
-                  </div>
-                  <div class="form__dropdown">
-                    Nunc placerat mi id nisi interdum is mollis. Praesent pharetra, justo ut
-                    sceleris que the mattis, leo quam.
-                  </div>
-                  <div class="form__checkbox">
-                    <input name="rad" id="11" type="radio" class="form__checkbox-button form__checkbox-button--multi">
-                    <label class="form__label" for="11">Multi User License</label>
-                  </div>
-                  <div class="form__dropdown form__dropdown--multi">
-                    Nunc placerat mi id nisi interdum is mollis.
-                    Praesent pharetra, justo ut sceleris que the mattis, leo quam.
-                  </div>
-                  <button type="submit" class="specification__button">Purchase Now</button>
-                </form>
-                <button class="specification__button specification__button--purple lnr-cart"> Add To Cart</button>
-              </div>
+          <div class="filter__criterion">
+            <div class="filter__select-container">
+              <select name="" class="filter__select filter__price">
+                <option value="" class="filter__price-option">Low To High</option>
+                <option value="" class="filter__price-option">High To Low</option>
+              </select>
             </div>
-            <div class="specification__statistic">
-              <div class="specification__inner">
-                <ul class="specification__list">
-                  <li class="specification__statistic-item">
-                    <span class="specification__statistic-text lnr-cart">Total Sales</span>
-                    <span class="specification__statistic-counter">426</span>
-                  </li>
-                  <li class="specification__statistic-item">
-                    <span class="specification__statistic-text lnr-heart">Favorites</span>
-                    <span class="specification__statistic-counter">426</span>
-                  </li>
-                  <li class="specification__statistic-item">
-                    <span class="specification__statistic-text lnr-bubble">Comments</span>
-                    <span class="specification__statistic-counter">426</span>
-                  </li>
-                  <li class="specification__statistic-item rate-star" data-rate="4.7">
-                    <div class="specification__star">
-                      (<span class="specification__star-counter">67</span> Raitings)
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <div class="filter__select-container">
+              <select name="" class="filter__select filter__itemperpage">
+                <option value="" class="filter__itemperpage-option">12 Items Per Page</option>
+                <option value="" class="filter__itemperpage-option">8 Items Per Page</option>
+                <option value="" class="filter__itemperpage-option">4 Items Per Page</option>
+              </select>
             </div>
-            <div class="specification__information">
-              <div class="specification__inner">
-                <div class="specification__title">Product Information</div>
-                <ul class="specification__list">
-                  <li class="specification__item">
-                    <div class="specification__category">Released :</div>
-                    <time class="specification__description">16 June 2015</time>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Updated :</div>
-                    <time class="specification__description">16 Jule 2016</time>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Version :</div>
-                    <div class="specification__description">1.2</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Category :</div>
-                    <div class="specification__description">Corporate & Business</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Layout :</div>
-                    <div class="specification__description">Responsive</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Retina Ready :</div>
-                    <div class="specification__description">No</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Files Included :</div>
-                    <div class="specification__description">Html, CSS, JavaScript</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Browser :</div>
-                    <div class="specification__description">IE10, IE11, Firefox, Safari, Opera, Chrome</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Bootstrap :</div>
-                    <div class="specification__description">Bootstrap 4</div>
-                  </li>
-                  <li class="specification__item">
-                    <div class="specification__category">Tags :</div>
-                    <div class="specification__description">
-                      <a href="#" class="link">business</a>,
-                      <a href="#" class="link">template</a>,
-                      <a href="#" class="link">onepage</a>,
-                      <a href="#" class="link">creative</a>,
-                      <a href="#" class="link">responsive</a>,
-                      <a href="#" class="link">corporate</a>,
-                      <a href="#" class="link">Bootstrap3</a>,
-                      <a href="#" class="link">html5</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="specification__author">
-              <div class="specification__inner">
-                <div class="specification__title">Product Author</div>
-                <div class="specification__author-container">
-                  <a href="#" class="link">
-                    <img src="./images/slider/slide.jpg" alt="" class="specification__author-image">
-                    <div class="specification__name">Theme-Valley</div>
-                  </a>
-                </div>
-                <span class="specification__signed">
-                  Signed Up:
-                  <time class="specification__signedtime"> 08 April 2016</time>
-                </span>
-                <ul class="specification__social-list social-list">
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--twitter"></a>
-                  </li>
-                  <li class="social-list__item">
-                    <a href="#" class="social-list__link social-list__link--gmail"></a>
-                  </li>
-                </ul>
-                <div class="specification__button-container">
-                  <button class="specification__button">View Profile</button>
-                  <button class="specification__button specification__button--purple">Send Message</button>
-                </div>
-              </div>
+            <div class="filter__radio-container">
+              <button type="button" class="filter__button filter__button--grid">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                  height="20px">
+                  <path fill-rule="evenodd" fill="rgb(116, 123, 134)"
+                    d="M19.526,19.903 L0.474,19.903 C0.245,19.903 0.059,19.716 0.059,19.485 L0.059,0.514 C0.059,0.283 0.245,0.095 0.474,0.095 L19.526,0.095 C19.755,0.095 19.941,0.283 19.941,0.514 L19.941,19.485 C19.941,19.716 19.755,19.903 19.526,19.903 ZM19.111,10.418 L18.584,10.418 C18.355,10.418 18.169,10.231 18.169,10.000 C18.169,9.769 18.355,9.581 18.584,9.581 L19.111,9.581 L19.111,0.933 L10.415,0.933 L10.415,1.351 C10.415,1.582 10.229,1.769 10.000,1.769 C9.770,1.769 9.585,1.582 9.585,1.351 L9.585,0.933 L0.889,0.933 L0.889,9.581 L1.416,9.581 C1.645,9.581 1.831,9.769 1.831,10.000 C1.831,10.231 1.645,10.418 1.416,10.418 L0.889,10.418 L0.889,19.066 L9.585,19.066 L9.585,18.648 C9.585,18.417 9.771,18.230 10.000,18.230 C10.229,18.230 10.415,18.417 10.415,18.648 L10.415,19.066 L19.111,19.066 L19.111,10.418 ZM10.415,10.786 C10.415,11.017 10.229,11.204 10.000,11.204 C9.770,11.204 9.585,11.017 9.585,10.786 L9.585,10.418 L9.219,10.418 C8.990,10.418 8.804,10.231 8.804,10.000 C8.804,9.769 8.990,9.581 9.219,9.581 L9.585,9.581 L9.585,9.213 C9.585,8.982 9.771,8.795 10.000,8.795 C10.229,8.795 10.415,8.982 10.415,9.213 L10.415,9.581 L10.780,9.581 C11.010,9.581 11.196,9.769 11.196,10.000 C11.196,10.231 11.010,10.418 10.780,10.418 L10.415,10.418 L10.415,10.786 ZM12.341,9.581 L13.902,9.581 C14.131,9.581 14.317,9.769 14.317,10.000 C14.317,10.231 14.131,10.418 13.902,10.418 L12.341,10.418 C12.112,10.418 11.926,10.231 11.926,10.000 C11.926,9.769 12.112,9.581 12.341,9.581 ZM15.463,9.581 L17.024,9.581 C17.253,9.581 17.439,9.769 17.439,10.000 C17.439,10.231 17.253,10.418 17.024,10.418 L15.463,10.418 C15.233,10.418 15.047,10.231 15.047,10.000 C15.047,9.769 15.233,9.581 15.463,9.581 ZM10.000,8.059 C9.770,8.059 9.585,7.872 9.585,7.641 L9.585,6.068 C9.585,5.837 9.771,5.650 10.000,5.650 C10.229,5.650 10.415,5.837 10.415,6.068 L10.415,7.641 C10.415,7.872 10.229,8.059 10.000,8.059 ZM10.000,4.914 C9.770,4.914 9.585,4.727 9.585,4.496 L9.585,2.923 C9.585,2.692 9.771,2.505 10.000,2.505 C10.229,2.505 10.415,2.692 10.415,2.923 L10.415,4.496 C10.415,4.727 10.229,4.914 10.000,4.914 ZM7.659,10.418 L6.098,10.418 C5.868,10.418 5.682,10.231 5.682,10.000 C5.682,9.769 5.868,9.581 6.098,9.581 L7.659,9.581 C7.888,9.581 8.074,9.769 8.074,10.000 C8.074,10.231 7.888,10.418 7.659,10.418 ZM4.537,10.418 L2.976,10.418 C2.747,10.418 2.561,10.231 2.561,10.000 C2.561,9.769 2.747,9.581 2.976,9.581 L4.537,9.581 C4.767,9.581 4.953,9.769 4.953,10.000 C4.953,10.231 4.767,10.418 4.537,10.418 ZM10.000,11.940 C10.229,11.940 10.415,12.127 10.415,12.358 L10.415,13.931 C10.415,14.162 10.229,14.349 10.000,14.349 C9.770,14.349 9.585,14.162 9.585,13.931 L9.585,12.358 C9.585,12.127 9.771,11.940 10.000,11.940 ZM10.000,15.085 C10.229,15.085 10.415,15.272 10.415,15.503 L10.415,17.075 C10.415,17.307 10.229,17.494 10.000,17.494 C9.770,17.494 9.585,17.307 9.585,17.075 L9.585,15.503 C9.585,15.272 9.771,15.085 10.000,15.085 Z" />
+                </svg>
+              </button>
+              <button type="button" class="filter__button filter__button--list">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px"
+                  height="19px">
+                  <path fill-rule="evenodd" fill="rgb(116, 123, 134)"
+                    d="M19.723,15.636 L7.511,15.636 C7.349,15.636 7.218,15.507 7.218,15.348 C7.218,15.190 7.349,15.061 7.511,15.061 L19.723,15.061 C19.885,15.061 20.016,15.190 20.016,15.348 C20.016,15.507 19.885,15.636 19.723,15.636 ZM19.723,10.724 L7.511,10.724 C7.349,10.724 7.218,10.595 7.218,10.436 C7.218,10.278 7.349,10.149 7.511,10.149 L19.723,10.149 C19.885,10.149 20.016,10.278 20.016,10.436 C20.016,10.595 19.885,10.724 19.723,10.724 ZM19.723,8.882 L7.511,8.882 C7.349,8.882 7.218,8.753 7.218,8.594 C7.218,8.436 7.349,8.307 7.511,8.307 L19.723,8.307 C19.885,8.307 20.016,8.436 20.016,8.594 C20.016,8.753 19.885,8.882 19.723,8.882 ZM19.723,3.970 L7.511,3.970 C7.349,3.970 7.218,3.842 7.218,3.683 C7.218,3.524 7.349,3.395 7.511,3.395 L19.723,3.395 C19.885,3.395 20.016,3.524 20.016,3.683 C20.016,3.842 19.885,3.970 19.723,3.970 ZM19.723,2.129 L7.511,2.129 C7.349,2.129 7.218,1.999 7.218,1.841 C7.218,1.682 7.349,1.553 7.511,1.553 L19.723,1.553 C19.885,1.553 20.016,1.682 20.016,1.841 C20.016,1.999 19.885,2.129 19.723,2.129 ZM4.693,19.013 L0.936,19.013 C0.429,19.013 0.016,18.608 0.016,18.111 L0.016,14.427 C0.016,13.930 0.429,13.526 0.936,13.526 L4.693,13.526 C5.201,13.526 5.613,13.930 5.613,14.427 L5.613,18.111 C5.613,18.608 5.201,19.013 4.693,19.013 ZM5.026,14.427 C5.026,14.247 4.877,14.101 4.693,14.101 L0.936,14.101 C0.753,14.101 0.603,14.247 0.603,14.427 L0.603,18.111 C0.603,18.291 0.753,18.437 0.936,18.437 L4.693,18.437 C4.877,18.437 5.026,18.291 5.026,18.111 L5.026,14.427 ZM4.693,12.259 L0.936,12.259 C0.429,12.259 0.016,11.855 0.016,11.358 L0.016,7.674 C0.016,7.176 0.429,6.772 0.936,6.772 L4.693,6.772 C5.201,6.772 5.613,7.176 5.613,7.674 L5.613,11.358 C5.613,11.855 5.201,12.259 4.693,12.259 ZM5.026,7.674 C5.026,7.493 4.877,7.347 4.693,7.347 L0.936,7.347 C0.753,7.347 0.603,7.493 0.603,7.674 L0.603,11.358 C0.603,11.537 0.753,11.684 0.936,11.684 L4.693,11.684 C4.877,11.684 5.026,11.537 5.026,11.358 L5.026,7.674 ZM4.693,5.505 L0.936,5.505 C0.429,5.505 0.016,5.101 0.016,4.604 L0.016,0.920 C0.016,0.423 0.429,0.018 0.936,0.018 L4.693,0.018 C5.201,0.018 5.613,0.423 5.613,0.920 L5.613,4.604 C5.613,5.101 5.201,5.505 4.693,5.505 ZM5.026,0.920 C5.026,0.740 4.877,0.594 4.693,0.594 L0.936,0.594 C0.753,0.594 0.603,0.740 0.603,0.920 L0.603,4.604 C0.603,4.783 0.753,4.930 0.936,4.930 L4.693,4.930 C4.877,4.930 5.026,4.783 5.026,4.604 L5.026,0.920 ZM7.511,16.902 L19.723,16.902 C19.885,16.902 20.016,17.031 20.016,17.190 C20.016,17.349 19.885,17.478 19.723,17.478 L7.511,17.478 C7.349,17.478 7.218,17.349 7.218,17.190 C7.218,17.031 7.349,16.902 7.511,16.902 Z" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
+
       </div>
     </section>
-    <section class="author-products">
+
+    <section class="products products--favorite">
       <div class="container">
-        <div class="author-products__inner">
-          <div class="title">More Items by <a href="#" class="title-special link">Theme-Valley</a></div>
-          <ul class="author-products__list">
-            <li class="author-products__item product-item">
-              <div class="product-item__image-container">
-                <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
-                <div class="product-item__hover">
-                  <a class="product-item__more" href="#">More Info</a>
-                  <a class="product-item__live" href="#">Live Demo</a>
-                </div>
+        <div class="products__inner">
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
               </div>
-              <div class="product-item__description">
-                <div class="product-item__description-title">E-commerce Shopping Cart</div>
-                <div class="product-item__description-person">
-                  <a class="link product-item__description-name" href="#">
-                    <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
-                    AazzTech
-                  </a>
-                  <a class="link product-item__description-type" href="#">
-                    <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
-                    WordPress
-                  </a>
-                </div>
-                <div class="product-item__seller-description">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet.
-                </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
               </div>
-              <div class="product-item__footer">
-                <div class="product-item__statistic">
-                  <div class="product-item__price">$110</div>
-                  <button class="product-item__likes lnr lnr-heart">
-                    <span class="product-item__likes-counter">46</span>
-                  </button>
-                  <div class="rate-star" data-rate="2.7"></div>
-                </div>
-                <button class="product-item__buys lnr lnr-cart">
-                  <span class="product-item__buys-counter">643</span>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
                 </button>
               </div>
-            </li>
-            <li class="author-products__item product-item">
-              <div class="product-item__image-container">
-                <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
-                <div class="product-item__hover">
-                  <a class="product-item__more" href="#">More Info</a>
-                  <a class="product-item__live" href="#">Live Demo</a>
-                </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
               </div>
-              <div class="product-item__description">
-                <div class="product-item__description-title">E-commerce Shopping Cart</div>
-                <div class="product-item__description-person">
-                  <a class="link product-item__description-name" href="#">
-                    <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
-                    AazzTech
-                  </a>
-                  <a class="link product-item__description-type" href="#">
-                    <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
-                    WordPress
-                  </a>
-                </div>
-                <div class="product-item__seller-description">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet.
-                </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
               </div>
-              <div class="product-item__footer">
-                <div class="product-item__statistic">
-                  <div class="product-item__price">$110</div>
-                  <button class="product-item__likes lnr lnr-heart">
-                    <span class="product-item__likes-counter">46</span>
-                  </button>
-                  <div class="rate-star" data-rate="2.7"></div>
-                </div>
-                <button class="product-item__buys lnr lnr-cart">
-                  <span class="product-item__buys-counter">643</span>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
                 </button>
               </div>
-            </li>
-            <li class="author-products__item product-item">
-              <div class="product-item__image-container">
-                <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
-                <div class="product-item__hover">
-                  <a class="product-item__more" href="#">More Info</a>
-                  <a class="product-item__live" href="#">Live Demo</a>
-                </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
               </div>
-              <div class="product-item__description">
-                <div class="product-item__description-title">E-commerce Shopping Cart</div>
-                <div class="product-item__description-person">
-                  <a class="link product-item__description-name" href="#">
-                    <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
-                    AazzTech
-                  </a>
-                  <a class="link product-item__description-type" href="#">
-                    <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
-                    WordPress
-                  </a>
-                </div>
-                <div class="product-item__seller-description">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet.
-                </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
               </div>
-              <div class="product-item__footer">
-                <div class="product-item__statistic">
-                  <div class="product-item__price">$110</div>
-                  <button class="product-item__likes lnr lnr-heart">
-                    <span class="product-item__likes-counter">46</span>
-                  </button>
-                  <div class="rate-star" data-rate="2.7"></div>
-                </div>
-                <button class="product-item__buys lnr lnr-cart">
-                  <span class="product-item__buys-counter">643</span>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
                 </button>
               </div>
-            </li>
-          </ul>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-item product-item--tab" data-category="plugin">
+            <div class="product-item__image-container">
+              <img src="./images/slider/slide.jpg" alt="slide-image" class="product-item__image">
+              <div class="product-item__hover">
+                <a class="product-item__more" href="#">More Info</a>
+                <a class="product-item__live" href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="product-item__description">
+              <div class="product-item__description-title">E-commerce Shopping Cart</div>
+              <div class="product-item__description-person">
+                <a class="link product-item__description-name" href="#">
+                  <img class="product-item__description-avatar" alt="avatar" src="./images/header/logo.png">
+                  AazzTech
+                </a>
+                <a class="link product-item__description-type" href="#">
+                  <img src="./images/slider/wordpress.png" alt="type" class="product-item__description-imagetype">
+                  WordPress
+                </a>
+              </div>
+              <div class="product-item__seller-description">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                justo ut scelerisque the mattis, leo quam aliquet.
+              </div>
+            </div>
+            <div class="product-item__footer">
+              <div class="product-item__statistic">
+                <div class="product-item__price">$110</div>
+                <button class="product-item__likes lnr lnr-heart">
+                  <span class="product-item__likes-counter">46</span>
+                </button>
+                <div class="rate-star" data-rate="2.7"></div>
+              </div>
+              <button class="product-item__buys lnr lnr-cart">
+                <span class="product-item__buys-counter">643</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="products__pagination pagination">
+          <div class="container">
+            <div class="pagination__inner">
+              <a href="#" class="pagination__link pagination__link--prev lnr-arrow-left"></a>
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active">
+                  <span href="#" class="link">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__dots">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="link">8</a>
+                </li>
+              </ul>
+              <a href="#" class="pagination__link pagination__link--next lnr-arrow-right"></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -892,7 +1068,7 @@
             <li class="footer__item"><a href="#" class="footer__link link">Testimonials </a> </li>
             <li class="footer__item"><a href="#" class="footer__link link">Contact Us </a> </li>
             <li class="footer__item"><a href="#" class="footer__link link">Copyright Notice</a> </li>
-            <li class="footer__item"><a href="#" class="footer__link link">product </a> </li>
+            <li class="footer__item"><a href="#" class="footer__link link">Blog </a> </li>
           </ul>
         </div>
         <div class="footer__item footer__item--help">

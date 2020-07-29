@@ -3,12 +3,24 @@ import slider from "./slider";
 import rate from "./rate";
 import tabs from "./tabs";
 import blog from "./blog";
+import product from "./product";
 import rangeSlider from "./rangeSlider";
 import navMiniDropdown from "./navMiniDropdown";
 import categoryPageDropdown from "./categoryPageDropdown";
 import productApeearance from "./categoryPageProductApeearance";
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  blog();
+  product();
+  navMiniDropdown();
+  rangeSlider();
+  rate(".rate-star");
+  productApeearance();
+  tabs();
+  categoryPageDropdown();
+  slider(".product-item--big", ".products-slider__translatex--big", ".products-slider__next", ".products-slider__prev", 1, false);
+  slider(".product-item--small", ".products-slider__translatex--small", ".products-slider__next--slider1", ".products-slider__prev--slider1", 3, true);
 
   let slider_image = document.querySelectorAll(".product-item__image-container"),
     more_info = document.querySelectorAll(".product-item__hover"),
@@ -27,15 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
-
-
-  blog();
-  navMiniDropdown();
-  rangeSlider();
-  rate(".rate-star");
-  productApeearance();
-  tabs();
-  categoryPageDropdown();
-  slider(".product-item--big", ".products-slider__translatex--big", ".products-slider__next", ".products-slider__prev", 1, false);
-  slider(".product-item--small", ".products-slider__translatex--small", ".products-slider__next--slider1", ".products-slider__prev--slider1", 3, true);
 });

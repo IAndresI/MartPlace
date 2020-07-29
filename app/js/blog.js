@@ -1,24 +1,24 @@
 function blog() {
-  let radio1 = document.querySelector(".form__checkbox-button"),
-    radio2 = document.querySelector(".form__checkbox-button--multi"),
-    radio1Dropdown = document.querySelector(".form__dropdown"),
-    radio2Dropdown = document.querySelector(".form__dropdown--multi");
-
-  if (radio1Dropdown) {
-
-    function show(radioDrop1, radioDrop2, activeClass) {
-      radioDrop1.classList.add(activeClass);
-      radioDrop2.classList.remove(activeClass);
+  let buttons = document.querySelectorAll(".blog__posts .blog__button"),
+    content = document.querySelectorAll(".blog__posts .blog__list");
+  if (content[0]) {
+    function showTab(button) {
+      button.classList.add("blog__button--active");
+      for (let i = 0; i < content.length; i++) {
+        if (button.getAttribute("data-tab") === content[i].getAttribute("data-content")) {
+          content[i].style.display = "block";
+        } else {
+          content[i].style.display = "none";
+          buttons[i].classList.remove("blog__button--active");
+        }
+      }
     }
-
-    radio1.addEventListener("change", function () {
-      show(radio1Dropdown, radio2Dropdown, "form__dropdown--show");
-    });
-
-    radio2.addEventListener("change", function () {
-      show(radio2Dropdown, radio1Dropdown, "form__dropdown--show");
-    });
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", () => {
+        showTab(buttons[i]);
+      });
+    }
+    showTab(buttons[0]);
   }
 }
-
 export default blog;
