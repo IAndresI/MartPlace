@@ -1,5 +1,17 @@
 @media(max-width:1200px) {
 
+  .pricing {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
   .blog {
     &__aside {
       max-width: 100%;
@@ -195,6 +207,17 @@
 }
 
 @media(max-width: 992px) {
+
+  .how-works {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__image {
+      order: 0 !important;
+    }
+  }
 
   .specification {
     &__inner {
@@ -506,6 +529,12 @@
 
 @media(max-width: 768px) {
 
+  .pricing {
+    &__item {
+      margin-right: 0;
+    }
+  }
+
   .product {
     &__tab-list {
       flex-wrap: wrap;
@@ -749,6 +778,20 @@
 }
 
 @media(max-width: 576px) {
+
+  .how-works {
+
+    &__image {
+      width: 320px;
+      height: 250px;
+      margin-right: 0;
+      order: 0 !important;
+    }
+
+    &__description {
+      padding: 0 10px;
+    }
+  }
 
   .product {
     &__tab-item {
