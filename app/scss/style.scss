@@ -2390,10 +2390,6 @@
       display: flex;
     }
 
-    .link {
-      height: auto !important;
-    }
-
     &--user {
       .link {
         height: 44px !important;
@@ -3428,7 +3424,7 @@
     color: #555555;
     cursor: pointer;
 
-    &:checked+label:before {
+    +label:before {
       content: "";
       border-radius: 50%;
       position: absolute;
@@ -3438,6 +3434,13 @@
       width: 10px;
       top: 17px;
       left: 0;
+      opacity: 0;
+      transition: all .3s;
+    }
+
+
+    &:checked+label:before {
+      opacity: 1;
     }
 
     &:hover {
@@ -3903,7 +3906,7 @@
     color: #555555;
     cursor: pointer;
 
-    &:checked+label:before {
+    +label:before {
       content: "";
       border-radius: 50%;
       position: absolute;
@@ -3912,6 +3915,12 @@
       height: 20px;
       width: 20px;
       left: 0;
+      transition: all .3s;
+      opacity: 0;
+    }
+
+    &:checked+label:before {
+      opacity: 1;
     }
 
     &:hover {

@@ -2,7 +2,6 @@
 import slider from "./slider";
 import rate from "./rate";
 import tabs from "./tabs";
-import blog from "./blog";
 import product from "./product";
 import rangeSlider from "./rangeSlider";
 import navMiniDropdown from "./navMiniDropdown";
@@ -11,13 +10,26 @@ import productApeearance from "./categoryPageProductApeearance";
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  blog();
+
+  tabs({
+    button: ".blog__posts .blog__button",
+    content: ".blog__posts .blog__list",
+    activeClass: ".blog__button--active",
+    tabToShow: 0
+  });
+  tabs({
+    button: ".products__category-button",
+    content: ".product-item--tab",
+    activeClass: ".category--active",
+    noContentAlert: true,
+    animate: true,
+    tabToShow: 1
+  });
   product();
   navMiniDropdown();
   rangeSlider();
   rate(".rate-star");
   productApeearance();
-  tabs();
   categoryPageDropdown();
   slider(".product-item--big", ".products-slider__translatex--big", ".products-slider__next", ".products-slider__prev", 1, false);
   slider(".product-item--small", ".products-slider__translatex--small", ".products-slider__next--slider1", ".products-slider__prev--slider1", 3, true);
