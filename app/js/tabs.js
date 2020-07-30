@@ -49,7 +49,6 @@ function tabs({
             e.target.classList.add(activeClass);
             let lastTime = performance.now();
             for (let j = 0; j < tab_content.length; j++) {
-              tab_content[j].style.transition = "transform .2s";
               tab_content[j].style.transform = "scaleX(0) scaleY(0)";
               if (tab_content[j].getAttribute("data-content") === tab_buttons[i].getAttribute("data-tab")) therescontent = true;
               let animateID;
@@ -57,6 +56,7 @@ function tabs({
               function animation() {
                 let currentTime = performance.now();
                 if (currentTime - lastTime >= 200) {
+                  tab_content[j].style.transition = "transform .2s";
                   tab_content[j].style.display = "none";
                   if (tab_content[j].getAttribute("data-content") === tab_buttons[i].getAttribute("data-tab")) {
                     tab_content[j].style.display = "block";
@@ -71,9 +71,6 @@ function tabs({
                 }
               }
               animateID = requestAnimationFrame(animation);
-            }
-            for (let j = 0; j < tab_content.length; j++) {
-              tab_content[j].style.transition = "";
             }
           } else {
             showTab(i);

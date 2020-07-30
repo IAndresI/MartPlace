@@ -23,7 +23,8 @@ function product() {
       content: ".product__tab-content",
       activeClass: ".product__tab-button--active",
       noContentAlert: ".nothing-find",
-      tabToShow: 0
+      tabToShow: 0,
+      animate: true
     });
   }
 }
