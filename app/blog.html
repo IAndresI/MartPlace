@@ -22,9 +22,10 @@
           <div class="top-menu__icons-list">
             <div class="top-menu__icons-item">
               <div class="top-menu__button top-menu__button--alarm">
-                <a href="#" class="link top-menu__icon lnr lnr-alarm"><span class="screen-reader">check
-                    alerts</span></a>
-                <a href="#" class="link top-menu__counter top-menu__counter--alarm">174</a>
+                <a href="#" class="link top-menu__icon lnr lnr-alarm">
+                  <span class="screen-reader">check alerts</span>
+                  <div class="link top-menu__counter top-menu__counter--alarm">174</div>
+                </a>
                 <div class="top-menu__dropdown dropdown dropdown--alarm">
                   <div class="dropdown__inner">
                     <div class="dropdown__header">
@@ -41,10 +42,10 @@
                                 Andre Spezof
                                 <span class="alarm__type">added to favorite</span>
                               </div>
-                              <p class="alarm__text">Marketify coffee shop</p>
+                              <div class="alarm__text">Marketify coffee shop</div>
                               <time class="alarm__time">Just now</time>
                             </div>
-                            <div class="dropdown__imagetype dropdown__imagetype--heart lnr lnr-heart"></div>
+                            <div class="alarm__imagetype alarm__imagetype--heart lnr lnr-heart"></div>
                           </div>
                         </a>
                       </li>
@@ -57,10 +58,10 @@
                                 Andre Spezof
                                 <span class="alarm__type">added to favorite</span>
                               </div>
-                              <p class="alarm__text">Marketify coffee shop</p>
+                              <div class="alarm__text">Marketify coffee shop</div>
                               <time class="alarm__time">Just now</time>
                             </div>
-                            <div class="dropdown__imagetype dropdown__imagetype--message lnr lnr-bubble"></div>
+                            <div class="alarm__imagetype alarm__imagetype--message lnr lnr-bubble"></div>
                           </div>
                         </a>
 
@@ -77,7 +78,7 @@
                               <p class="alarm__text">Marketify coffee shop</p>
                               <time class="alarm__time">Just now</time>
                             </div>
-                            <div class="dropdown__imagetype dropdown__imagetype--cart lnr lnr-cart"></div>
+                            <div class="alarm__imagetype alarm__imagetype--cart lnr lnr-cart"></div>
                           </div>
                         </a>
                       </li>
@@ -90,10 +91,10 @@
                                 Andre Spezof
                                 <span class="dalarm__type">added to favorite</span>
                               </div>
-                              <p class="alarm__text">Marketify coffee shop</p>
+                              <div class="alarm__text">Marketify coffee shop</div>
                               <time class="alarm__time">Just now</time>
                             </div>
-                            <div class="dropdown__imagetype dropdown__imagetype--star lnr lnr-star"></div>
+                            <div class="alarm__imagetype alarm__imagetype--star lnr lnr-star"></div>
                           </div>
                         </a>
                       </li>
@@ -106,8 +107,8 @@
               <div class="top-menu__button top-menu__button--message">
                 <a href="#" class="link top-menu__icon lnr lnr-envelope">
                   <span class="screen-reader">check messeges</span>
+                  <div href="#" class="link top-menu__counter top-menu__counter--message">1</div>
                 </a>
-                <a href="#" class="link top-menu__counter top-menu__counter--message">1</a>
                 <div class="top-menu__dropdown dropdown dropdown--messege">
                   <div class="dropdown__inner">
                     <div class="dropdown__header">
@@ -180,8 +181,8 @@
               <div class="top-menu__button top-menu__button--cart">
                 <a href="#" class="link link top-menu__icon lnr lnr-cart">
                   <span class="screen-reader">check shopping cart</span>
+                  <div href="#" class="link link top-menu__counter top-menu__counter--cart">32</div>
                 </a>
-                <a href="#" class="link link top-menu__counter top-menu__counter--cart">32</a>
                 <div class="top-menu__dropdown dropdown dropdown--cart">
                   <div class="dropdown__inner dropdown__inner--cart">
                     <div class="dropdown__cart-products">
@@ -197,7 +198,7 @@
                           </a>
                           <div class="cart__description">
                             <button class="cart__remove">
-                              <div class="dropdown__imagetype dropdown__imagetype--trash">
+                              <div class="cart__imagetype cart__imagetype--trash">
                                 <span class="lnr lnr-trash"></span>
                               </div>
                             </button>
@@ -215,7 +216,7 @@
                           </a>
                           <div class="cart__description">
                             <button class="cart__remove">
-                              <div class="dropdown__imagetype dropdown__imagetype--trash">
+                              <div class="cart__imagetype cart__imagetype--trash">
                                 <span class="lnr lnr-trash"></span>
                               </div>
                             </button>
@@ -296,11 +297,9 @@
                     </ul>
                   </div>
                 </div>
-
-
               </li>
               <li class="menu__item menu__item--products">
-                <a href="#" class="link">
+                <a href="/category-page.html" class="link">
                   all poducts
                 </a>
                 <div class="top-menu__dropdown dropdown dropdown--products">
@@ -491,7 +490,6 @@
       </div>
     </div>
   </header>
-
   <main class="main">
     <section class="breadcrumps breadcrumps--big">
       <div class="container">
@@ -801,8 +799,10 @@
               </ul>
             </div>
             <aside class="blog__banner">
-              Banner
-              <span class="blog__proportions">360x270</span>
+              <a href="#" class="blog__banner-link">
+                Banner
+                <span class="blog__proportions">360x270</span>
+              </a>
             </aside>
           </div>
         </div>

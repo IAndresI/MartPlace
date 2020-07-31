@@ -9,8 +9,8 @@ import categoryPageDropdown from "./categoryPageDropdown";
 import productApeearance from "./categoryPageProductApeearance";
 import cardHover from "./cardHover";
 
-
 document.addEventListener("DOMContentLoaded", function () {
+
 
   tabs({
     button: ".products__category-button",
@@ -27,13 +27,35 @@ document.addEventListener("DOMContentLoaded", function () {
     noContentAlert: ".nothing-find",
     tabToShow: 0
   });
+
+
+  slider({
+    slider__item: ".product-item--small",
+    slider__translateX: ".products-slider__translatex--small",
+    slider__button__next: ".products-slider__next--slider1",
+    slider__button__prev: ".products-slider__prev--slider1",
+    slidesToShow: 3,
+    responsive: [{
+        breakPoint: 1160,
+        slidesToShow: 2
+      },
+      {
+        breakPoint: 780,
+        slidesToShow: 1
+      }
+    ]
+  });
+  slider({
+    slider__item: ".product-item--big",
+    slider__translateX: ".products-slider__translatex--big",
+    slider__button__next: ".products-slider__next",
+    slider__button__prev: ".products-slider__prev"
+  });
   product();
   navMiniDropdown();
   rangeSlider();
   rate(".rate-star");
   productApeearance();
   categoryPageDropdown();
-  slider(".product-item--big", ".products-slider__translatex--big", ".products-slider__next", ".products-slider__prev", 1, false);
-  slider(".product-item--small", ".products-slider__translatex--small", ".products-slider__next--slider1", ".products-slider__prev--slider1", 3, true);
   cardHover(".product-item__image", ".product-item__image-container", ".product-item__hover");
 });

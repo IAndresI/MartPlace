@@ -37,7 +37,7 @@
   font-style: normal;
 }
 
-.lnr {
+[class*="lnr-"]::before {
   font-family: 'Linearicons-Free';
   speak: none;
   font-style: normal;
@@ -45,14 +45,13 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 .lnr-home:before {
-  font-family: 'Linearicons-Free';
   content: "\e800";
 }
 
@@ -117,7 +116,6 @@
 }
 
 .lnr-cog:before {
-  font-family: 'Linearicons-Free';
   content: "\e810";
 }
 
@@ -126,12 +124,10 @@
 }
 
 .lnr-dice:before {
-  font-family: 'Linearicons-Free';
   content: "\e812";
 }
 
 .lnr-heart:before {
-  font-family: "Linearicons-free";
   content: "\e813";
 }
 
@@ -152,7 +148,6 @@
 }
 
 .lnr-envelope:before {
-  font-family: 'Linearicons-Free';
   content: "\e818";
 }
 
@@ -165,7 +160,6 @@
 }
 
 .lnr-eye:before {
-  font-family: 'Linearicons-Free';
   content: "\e81b";
 }
 
@@ -186,7 +180,6 @@
 }
 
 .lnr-exit:before {
-  font-family: 'Linearicons-Free';
   content: "\e820";
 }
 
@@ -219,7 +212,6 @@
 }
 
 .lnr-book:before {
-  font-family: 'Linearicons-Free';
   content: "\e828";
 }
 
@@ -228,7 +220,6 @@
 }
 
 .lnr-user:before {
-  font-family: 'Linearicons-Free';
   content: "\e82a";
 }
 
@@ -245,7 +236,6 @@
 }
 
 .lnr-cart:before {
-  font-family: 'Linearicons-Free';
   content: "\e82e";
 }
 
@@ -254,7 +244,6 @@
 }
 
 .lnr-phone-handset:before {
-  font-family: 'Linearicons-Free';
   content: "\e830";
 }
 
@@ -267,7 +256,6 @@
 }
 
 .lnr-map-marker:before {
-  font-family: 'Linearicons-Free';
   content: "\e833";
 }
 
@@ -316,7 +304,6 @@
 }
 
 .lnr-bubble:before {
-  font-family: 'Linearicons-Free';
   content: "\e83f";
 }
 
@@ -333,7 +320,6 @@
 }
 
 .lnr-chart-bars:before {
-  font-family: 'Linearicons-Free';
   content: "\e843";
 }
 
@@ -370,7 +356,6 @@
 }
 
 .lnr-briefcase:before {
-  font-family: 'Linearicons-Free';
   content: "\e84c";
 }
 
@@ -419,7 +404,6 @@
 }
 
 .lnr-alarm:before {
-  font-family: 'Linearicons-Free';
   content: "\e858";
 }
 
@@ -468,7 +452,6 @@
 }
 
 .lnr-clock:before {
-  font-family: 'Linearicons-Free';
   content: "\e864";
 }
 
@@ -477,7 +460,6 @@
 }
 
 .lnr-upload:before {
-  font-family: 'Linearicons-Free';
   content: "\e866";
 }
 
@@ -514,7 +496,6 @@
 }
 
 .lnr-magnifier:before {
-  font-family: 'Linearicons-Free';
   content: "\e86f";
 }
 
@@ -543,7 +524,6 @@
 }
 
 .lnr-chevron-right:before {
-  font-family: 'Linearicons-Free';
   content: "\e876";
 }
 
@@ -556,12 +536,10 @@
 }
 
 .lnr-arrow-left:before {
-  font-family: "Linearicons-free";
   content: "\e879";
 }
 
 .lnr-arrow-right:before {
-  font-family: "Linearicons-free";
   content: "\e87a";
 }
 
