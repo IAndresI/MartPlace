@@ -3726,6 +3726,7 @@
   margin: 0 auto;
 
   &__textarea {
+    resize: none;
     margin-bottom: 30px;
     height: 50px;
     padding-top: 20px;
