@@ -1,2 +1,2 @@
 # MartPlace
-just my another oriject
+Just my another project
